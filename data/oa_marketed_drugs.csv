@@ -1,0 +1,28 @@
+brand_name,generic_name,application_number,route,pharm_class,manufacturers,source
+CORTEF,HYDROCORTISONE,NDA008697,ORAL,Corticosteroid [EPC],"Asclemed USA, Inc.; Mylan Pharmaceuticals Inc.; Pharmacia & Upjohn Company LLC",openFDA
+Medrol,METHYLPREDNISOLONE,NDA011153,ORAL,Corticosteroid [EPC],"Mylan Pharmaceuticals Inc.; NuCare Pharmaceuticals,Inc.; Pharmacia & Upjohn Company LLC; REMEDYREPACK INC.",openFDA
+DEPO-MEDROL,METHYLPREDNISOLONE ACETATE,NDA011757,INTRALESIONAL,,"A-S Medication Solutions; Asclemed USA, Inc.; Pharmacia & Upjohn Company LLC",openFDA
+KENALOG-10,TRIAMCINOLONE ACETONIDE,NDA012041,INTRA-ARTICULAR,Corticosteroid [EPC],"A-S Medication Solutions; E.R. Squibb & Sons, L.L.C.",openFDA
+CELESTONE SOLUSPAN,BETAMETHASONE ACETATE AND BETAMETHASONE SODIUM PHOSPHATE,NDA014602,INTRA-ARTICULAR,,Organon LLC; Sportpharm LLC,openFDA
+KENALOG-40,TRIAMCINOLONE ACETONIDE,NDA014901,INTRA-ARTICULAR,Corticosteroid [EPC],"A-S Medication Solutions; Asclemed USA, Inc.; E.R. Squibb & Sons, L.L.C.; Proficient Rx LP",openFDA
+Indocin,INDOMETHACIN,NDA018332,ORAL,Nonsteroidal Anti-inflammatory Drug [EPC],Zyla Life Sciences US LLC,openFDA
+INDOMETHACIN,INDOMETHACIN,NDA018829,ORAL,Nonsteroidal Anti-inflammatory Drug [EPC],"Chartwell RX, LLC",openFDA
+Naproxen,NAPROXEN,NDA018965,ORAL,Nonsteroidal Anti-inflammatory Drug [EPC],"Acella Pharmaceuticals, LLC",openFDA
+Naproxen,NAPROXEN,NDA020067,ORAL,Nonsteroidal Anti-inflammatory Drug [EPC],Zameer Pharmaceuticals LLC,openFDA
+Naprelan,NAPROXEN SODIUM,NDA020353,ORAL,,"Almatica Pharma LLC; Alvogen Inc.; SA3, LLC; Upsher-Smith Laboratories, LLC",openFDA
+ARTHROTEC,DICLOFENAC SODIUM AND MISOPROSTOL,NDA020607,ORAL,Prostaglandin E1 Analog [EPC],"Advanced Rx Pharmacy of Tennessee, LLC; Mylan Pharmaceuticals Inc.; Pfizer Laboratories Div Pfizer Inc",openFDA
+CELEBREX,CELECOXIB,NDA020998,ORAL,Nonsteroidal Anti-inflammatory Drug [EPC],Viatris Specialty LLC,openFDA
+Zybic,MELOXICAM,NDA021530,ORAL,Nonsteroidal Anti-inflammatory Drug [EPC],"Avondale Pharmaceuticals, LLC; Emerald Therapeutics, LLC; Redmont Pharmaceuticals, LLC",openFDA
+Diclofenac Sodium,DICLOFENAC SODIUM,NDA022122,TOPICAL,,Proficient Rx LP,openFDA
+Zilretta,TRIAMCINOLONE ACETONIDE EXTENDED-RELEASE INJECTABLE SUSPENSION,NDA208845,INTRA-ARTICULAR,,"Pacira Pharmaceuticals, Inc.",openFDA
+VYSCOXA,CELECOXIB,NDA211759,ORAL,Nonsteroidal Anti-inflammatory Drug [EPC],"Carwin Pharmaceutical Associates, LLC",openFDA
+COXANTO,OXAPROZIN,NDA217927,ORAL,Nonsteroidal Anti-inflammatory Drug [EPC],"SOLA Pharmaceuticals, LLC",openFDA
+Voltaren Gel / Voltaren Arthritis,DICLOFENAC SODIUM (TOPICAL GEL),NDA022122 (Rx) / OTC monograph,TOPICAL,Nonsteroidal Anti-inflammatory Drug,GSK (OTC); various,manual
+Pennsaid,DICLOFENAC SODIUM (TOPICAL SOLUTION),NDA204623,TOPICAL,Nonsteroidal Anti-inflammatory Drug,Mitsubishi Tanabe / Horizon Therapeutics,manual
+Duexis,IBUPROFEN AND FAMOTIDINE,NDA202770,ORAL,NSAID + H2 blocker combination,Horizon Therapeutics,manual
+Vimovo,NAPROXEN AND ESOMEPRAZOLE MAGNESIUM,NDA022511,ORAL,NSAID + PPI combination,Horizon Therapeutics / Kowa,manual
+Consensi,CELECOXIB AND AMLODIPINE BESYLATE,NDA210975,ORAL,NSAID + calcium channel blocker combination,Cadence / Kye Pharmaceuticals,manual
+Feldene,PIROXICAM,NDA018068,ORAL,Nonsteroidal Anti-inflammatory Drug,Pfizer (mostly genericized),manual
+Mobic,MELOXICAM,NDA020938,ORAL,Nonsteroidal Anti-inflammatory Drug,Boehringer Ingelheim (mostly genericized),manual
+Cymbalta,DULOXETINE HYDROCHLORIDE,NDA021427,ORAL,SNRI - approved for chronic musculoskeletal/OA pain,Eli Lilly (mostly genericized),manual
+Zorvolex,"DICLOFENAC (LOW-DOSE, SoluMatrix)",NDA204592,ORAL,Nonsteroidal Anti-inflammatory Drug,Iroko Pharmaceuticals,manual

@@ -1,20 +1,20 @@
 company_name,pipeline_asset_count,marketed_asset_count,track_priority,notes
-Pfizer,27,1,,
-Organon and Co,19,0,,
-Eli Lilly and Company,17,0,,
-"Pacira Pharmaceuticals, Inc",15,1,,
-Novartis Pharmaceuticals,12,0,,
-"Johnson & Johnson Pharmaceutical Research & Development, L.L.C.",12,0,,
-GlaxoSmithKline,11,0,,
-Merck Sharp & Dohme LLC,10,0,,
+Pfizer,27,1,Yes - shortlist,"Tanezumab - anti-NGF, largest historical OA pain program (FDA rejected 2021); watch for any revival/partner-out"
+Organon and Co,19,0,Yes - shortlist,Legacy Merck OA compounds spun off; active Phase 3 trials
+Eli Lilly and Company,17,0,Yes - shortlist,"Retatrutide, orforglipron, eloralintide, LY4065967 - active Phase 2/3 GLP-1/amylin programs targeting OA via weight loss"
+"Pacira Pharmaceuticals, Inc",15,1,Yes - shortlist,Markets Zilretta (marketed) + PCRX-201 gene therapy in development - both marketed and pipeline exposure
+Novartis Pharmaceuticals,12,0,Yes - shortlist,"LNA043 - cartilage regeneration/structural DMOAD candidate, active"
+"Johnson & Johnson Pharmaceutical Research & Development, L.L.C.",12,0,Yes - shortlist,Multiple active Phase 3 OA programs
+GlaxoSmithKline,11,0,Yes - shortlist,"Active pipeline, multiple trials"
+Merck Sharp & Dohme LLC,10,0,Yes - shortlist,"Active pipeline history, multiple trials"
 Purdue Pharma LP,10,0,,
 NicOx,10,0,,
 "PMG Pharm Co., Ltd",8,1,,
-Boehringer Ingelheim,9,0,,
+Boehringer Ingelheim,9,0,Yes - shortlist,Markets Mobic; active pipeline history
 Medipost Co Ltd.,8,0,,
-Regeneron Pharmaceuticals,8,0,,
+Regeneron Pharmaceuticals,8,0,Yes - shortlist,Fasinumab - anti-NGF (partnered historically w/ Teva/Mitsubishi Tanabe)
 Sanofi,7,0,,
-AstraZeneca,7,0,,
+AstraZeneca,7,0,Yes - shortlist,"Active pipeline, multiple trials"
 "iN Therapeutics Co., Ltd.",7,0,,
 Shanghai AbelZeta Ltd.,7,0,,
 Ampio Pharmaceuticals. Inc.,7,0,,
@@ -22,17 +22,17 @@ Ampio Pharmaceuticals. Inc.,7,0,,
 Lakefront Biotherapeutics NV,7,0,,
 "Cara Therapeutics, Inc.",7,0,,
 Kolon Life Science,7,0,,
-Grünenthal GmbH,6,0,,
+Grünenthal GmbH,6,0,Yes - shortlist,"Pain-focused specialty pharma, active OA programs"
 "OrthoTrophix, Inc",6,0,,
 Eurofarma Laboratorios S.A.,6,0,,
-Centrexion Therapeutics,6,0,,
-Novartis,6,0,,
+Centrexion Therapeutics,6,0,Yes - shortlist,CNTX-4975 (trans-capsaicin) - clinical-stage non-opioid OA pain candidate
+Novartis,6,0,Yes - shortlist,See Novartis Pharmaceuticals
 Pfizer's Upjohn has merged with Mylan to form Viatris Inc.,6,0,,
 "Ono Pharmaceutical Co., Ltd.",6,0,,
 Bioiberica,6,0,,
 Menarini Group,6,0,,
 POZEN,5,1,,
-"Biosplice Therapeutics, Inc.",5,0,,
+"Biosplice Therapeutics, Inc.",5,0,Yes - shortlist,"Lorecivivint (SM04690) - leading Wnt-pathway DMOAD candidate, Phase 3"
 "Noven Pharmaceuticals, Inc.",5,0,,
 "Janssen Research & Development, LLC",5,0,,
 "Tris Pharma, Inc.",5,0,,
@@ -61,7 +61,7 @@ ZARS Pharma Inc.,4,0,,
 Procter and Gamble,4,0,,
 IDEA AG,4,0,,
 Wyeth is now a wholly owned subsidiary of Pfizer,4,0,,
-Novo Nordisk A/S,3,0,,
+Novo Nordisk A/S,3,0,Yes - shortlist,"NNC0487-0111 - active Phase 3, GLP-1-adjacent OA program"
 "Jiangsu Aosaikang Pharmaceutical Co., Ltd.",3,0,,
 Active Implants,3,0,,
 DuoGenic StemCells Corporation (DGSC),3,0,,
@@ -95,7 +95,7 @@ Zalicus,3,0,,
 Janssen Pharmaceutica,3,0,,
 Abbott,3,0,,
 Nucitec,3,0,,
-"Kolon TissueGene, Inc.",2,0,,
+"Kolon TissueGene, Inc.",2,0,Yes - shortlist,"TG-C (Invossa) - cell/gene therapy, notable regulatory history worth tracking"
 Axolotl Biologix,2,0,,
 "Medipost, Inc.",2,0,,
 Nature Cell Co. Ltd.,2,0,,
@@ -115,7 +115,7 @@ Tanabe Pharma Corporation,2,0,,
 ArthroBiologix Inc.,2,0,,
 TBF Genie Tissulaire,2,0,,
 "Nuwacell Biotechnologies Co., Ltd.",2,0,,
-Genascence Corporation,2,0,,
+Genascence Corporation,2,0,Yes - shortlist,"GNSC-001 - IL-1Ra gene therapy for knee OA, active Phase 1"
 Wuxi Cellular Biopharmaceutical Group Ltd.,2,0,,
 "Kunming Baker Norton Pharmaceutical Sales Co., Ltd.",2,0,,
 Laboratorios Silanes S.A. de C.V.,2,0,,
@@ -125,7 +125,7 @@ QC Kinetix LLC,2,0,,
 "Daehwa Pharmaceutical Co., Ltd.",2,0,,
 Frontier Biotechnologies Inc.,2,0,,
 ZYUS Life Sciences Inc.,2,0,,
-Eupraxia Pharmaceuticals Inc.,2,0,,
+Eupraxia Pharmaceuticals Inc.,2,0,Yes - shortlist,"EP-104IAR - extended-release intra-articular steroid, clinical-stage"
 Rion Inc.,2,0,,
 Ensol Bioscience,2,0,,
 Shin Poong Pharmaceutical Co. Ltd.,2,0,,
@@ -137,7 +137,7 @@ Bioventus LLC,2,0,,
 "Regenexx, LLC",2,0,,
 Mylan Pharmaceuticals Private Limited,2,0,,
 Bone Therapeutics S.A,2,0,,
-"Unity Biotechnology, Inc.",2,0,,
+"Unity Biotechnology, Inc.",2,0,Yes - shortlist,"UBX0101 - senolytic, failed Phase 2 but historically notable; watch for pivots"
 "Teva Branded Pharmaceutical Products R&D, Inc.",2,0,,
 Bayer,2,0,,
 "Taisho Pharmaceutical Co., Ltd.",2,0,,
@@ -194,7 +194,7 @@ RegenLab France SAS,1,0,,
 "DALIM TISSEN Co., Ltd.",1,0,,
 HALEON,1,0,,
 Cytonics Corporation,1,0,,
-Levicept,1,0,,
+Levicept,1,0,Yes - shortlist,"LEVI-04 - anti-NGF/p75 receptor fusion, differentiated mechanism vs. tanezumab/fasinumab"
 "Belief BioMed (Beijing) Co., Ltd",1,0,,
 "Immunis, Inc.",1,0,,
 Hope Biosciences Research Foundation,1,0,,

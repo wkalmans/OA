@@ -1,0 +1,49 @@
+# Eupraxia Pharmaceuticals Inc. — Osteoarthritis Profile
+
+*Lighter-touch pull (web/PubMed priority per instructions; SEC 40-F/6-K filings exist separately in sec_filings.csv and were not the focus of this pass). Compiled 2026-08-21.*
+
+## Asset Overview
+
+**EP-104IAR** — an extended-release, intra-articular formulation of **fluticasone propionate** (a corticosteroid) using Eupraxia's proprietary "Diffusphere" polymer-microparticle delivery technology, injected into the knee for OA pain. The polymer coating is designed to prolong joint residence time and provide longer-lasting pain relief than existing injectable corticosteroids, while minimizing systemic steroid exposure (glucose/cortisol effects). Lead relevant trials: [NCT02609126](https://clinicaltrials.gov/study/NCT02609126) (early Phase 1 PK/safety) and [NCT04120402](https://clinicaltrials.gov/study/NCT04120402) ("SPRINGBOARD," Phase 2b efficacy/safety, 318 patients, Completed — start Sept 10, 2021, completion June 1, 2023).
+
+## Current Status
+
+- **Phase 2b (SPRINGBOARD) — positive, completed.** Topline results announced June 26, 2023: primary endpoint met — clinically meaningful, statistically significant improvement in WOMAC Pain vs. vehicle-placebo at 12 weeks (p=0.004). 3 of 4 secondary endpoints also met: WOMAC Function (p=0.014), OMERACT-OARSI strict responders (p=0.011), AUC for WOMAC Pain (p<0.001). [PR Newswire, 2023-06-26](https://www.prnewswire.com/news-releases/eupraxia-pharmaceuticals-reports-positive-topline-data-in-its-phase-2b-osteoarthritis-trial-with-ep-104iar-301862773.html)
+- Full data set published in **The Lancet Rheumatology**, Oct 15, 2024, confirming benefit extending through 15–24 weeks and minimal systemic glucose/cortisol effects. [PR Newswire, 2024-10-15](https://www.prnewswire.com/news-releases/lancet-rheumatology-publishes-phase-2b-data-on-eupraxia-pharmaceuticals-ep-104iar-for-the-treatment-of-knee-osteoarthritis-302275992.html), [Lancet Rheumatology full text](https://www.thelancet.com/journals/lanrhe/article/PIIS2665-9913(24)00223-6/fulltext)
+- **FDA Fast Track designation** granted for EP-104IAR in OA of the knee, June 13, 2023. [Newswire](https://www.newswire.ca/news-releases/eupraxia-pharmaceuticals-receives-u-s-fda-fast-track-designation-for-ep-104iar-in-treatment-of-osteoarthritis-829294221.html)
+- **Feb 1, 2024** — Following an End-of-Phase 2 meeting with FDA, Eupraxia announced it was **initiating a Phase 3 program**: **PROMENADE 1** (~740 patients, single dose, confirmatory efficacy/safety over 6 months) and **PROMENADE 2** (~300 patients, evaluating a second dose for durability), running in parallel. Company guidance at the time targeted dosing the first Phase 3 patient in Q3 2024. [Life Sciences BC](https://lifesciencesbc.ca/members/eupraxia-pharmaceuticals-initiates-phase-3-development-program-for-ep-104iar/)
+- **Current status looks stalled/deprioritized relative to that 2024 plan.** We found no press release or clinical-trial registration confirming that PROMENADE 1/2 ever began dosing patients. By the company's Q3 2025 report (Nov 4, 2025), Eupraxia describes itself as **"currently evaluating funding alternatives for the continued development of EP-104IAR, including potential partnership opportunities"** — language indicating it is looking for a partner/external funding rather than running Phase 3 with its own capital. [GlobeNewswire, Q3 2025 results, 2025-11-04](https://www.globenewswire.com/news-release/2025/11/04/3180937/0/en/Eupraxia-Pharmaceuticals-Reports-Third-Quarter-2025-Financial-Results.html)
+- In its **Q1 2026** (May 12, 2026) and **Q2 2026** (Aug 11, 2026) financial results, EP-104IAR gets only a single boilerplate sentence noting the completed Phase 2b (SPRINGBOARD) trial — no PROMENADE enrollment, dosing, or timeline update in either release. All of the company's 2025–2026 clinical and capital-allocation narrative (new executive/board hires, expanded trial size, DDW data presentations) is now about **EP-104GI**, a related Diffusphere-based fluticasone propionate program for eosinophilic esophagitis (a separate, non-OA indication being studied in the "RESOLVE" trial — not to be confused with EP-104IAR/OA). [GlobeNewswire, Q2 2026 results, 2026-08-11](https://www.globenewswire.com/news-release/2026/08/11/3343238/0/en/eupraxia-pharmaceuticals-reports-second-quarter-2026-financial-results.html), [GlobeNewswire, Q1 2026 results, 2026-05-12](https://www.globenewswire.com/news-release/2026/05/12/3293518/0/en/Eupraxia-Pharmaceuticals-Reports-First-Quarter-2026-Financial-Results.html)
+- **Bottom line:** EP-104IAR has positive, published Phase 2b data and a designed Phase 3 program (PROMENADE), but as of August 2026 the company's own disclosures suggest the OA program is on hold pending a partner or additional funding, while capital and management attention have shifted to the EP-104GI eosinophilic-esophagitis program. We did not find a press release explicitly using the word "paused" or "discontinued" for EP-104IAR — this reading is inferred from the funding language and the pattern of omission in six-plus months of subsequent earnings releases.
+
+## Recent News
+
+- **2026-08-11** — Q2 2026 financial results: EP-104IAR reduced to boilerplate mention; all clinical/strategic emphasis on EP-104GI/EoE. [GlobeNewswire](https://www.globenewswire.com/news-release/2026/08/11/3343238/0/en/eupraxia-pharmaceuticals-reports-second-quarter-2026-financial-results.html)
+- **2026-05-12** — Q1 2026 financial results: same pattern — single-sentence EP-104IAR mention, no PROMENADE update. [GlobeNewswire](https://www.globenewswire.com/news-release/2026/05/12/3293518/0/en/Eupraxia-Pharmaceuticals-Reports-First-Quarter-2026-Financial-Results.html)
+- **2025-11-04** — Q3 2025 financial results: explicitly states the company is "evaluating funding alternatives ... including potential partnership opportunities" for EP-104IAR; notes the January 2024 FDA meeting on late-phase program requirements for a US NDA. Also reports an $80.5M public offering, extending cash runway into H1 2028 (mostly earmarked for EP-104GI). [GlobeNewswire](https://www.globenewswire.com/news-release/2025/11/04/3180937/0/en/Eupraxia-Pharmaceuticals-Reports-Third-Quarter-2025-Financial-Results.html)
+- **2024-10-15** — Full Phase 2b (SPRINGBOARD) data published in The Lancet Rheumatology. [PR Newswire](https://www.prnewswire.com/news-releases/lancet-rheumatology-publishes-phase-2b-data-on-eupraxia-pharmaceuticals-ep-104iar-for-the-treatment-of-knee-osteoarthritis-302275992.html)
+- **2024-02-01** — Phase 3 program (PROMENADE 1 & 2) initiated following End-of-Phase 2 FDA meeting; first patient dosing targeted for Q3 2024 (target not confirmed as met in any subsequent release we found). [Life Sciences BC](https://lifesciencesbc.ca/members/eupraxia-pharmaceuticals-initiates-phase-3-development-program-for-ep-104iar/)
+- **2023-06-26** — Positive Phase 2b (SPRINGBOARD) topline results announced. [PR Newswire](https://www.prnewswire.com/news-releases/eupraxia-pharmaceuticals-reports-positive-topline-data-in-its-phase-2b-osteoarthritis-trial-with-ep-104iar-301862773.html)
+- **2023-06-13** — FDA Fast Track designation granted. [Newswire](https://www.newswire.ca/news-releases/eupraxia-pharmaceuticals-receives-u-s-fda-fast-track-designation-for-ep-104iar-in-treatment-of-osteoarthritis-829294221.html)
+
+## Key Scientific Literature
+
+- Malone A, et al. "Efficacy and safety of a diffusion-based extended-release fluticasone propionate intra-articular injection (EP-104IAR) in knee osteoarthritis (SPRINGBOARD): a 24-week, multicentre, randomised, double-blind, vehicle-controlled, phase 2 trial." *The Lancet Rheumatology*, Dec 2024. PMID: [39401503](https://pubmed.ncbi.nlm.nih.gov/39401503/) — the primary efficacy publication; full SPRINGBOARD results.
+- Malone A, et al. "Safety and pharmacokinetics of EP-104IAR (sustained-release fluticasone propionate) in knee osteoarthritis: A randomized, double-blind, placebo-controlled phase 1 trial." *Osteoarthritis and Cartilage Open*, Dec 2021. PMID: [36474755](https://pubmed.ncbi.nlm.nih.gov/36474755/) — Phase 1 PK/safety data (corresponds to NCT02609126-era work).
+- Getgood A, et al. "Pharmacokinetic Profile of Intra-articular Fluticasone Propionate Microparticles in Beagle Dog Knees." *Cartilage*, Apr 2019. PMID: [28786292](https://pubmed.ncbi.nlm.nih.gov/28786292/) — preclinical delivery-technology paper underpinning the Diffusphere formulation.
+
+## Sources
+
+- https://clinicaltrials.gov/study/NCT04120402
+- https://clinicaltrials.gov/study/NCT02609126
+- https://pubmed.ncbi.nlm.nih.gov/39401503/
+- https://pubmed.ncbi.nlm.nih.gov/36474755/
+- https://pubmed.ncbi.nlm.nih.gov/28786292/
+- https://www.thelancet.com/journals/lanrhe/article/PIIS2665-9913(24)00223-6/fulltext
+- https://www.prnewswire.com/news-releases/lancet-rheumatology-publishes-phase-2b-data-on-eupraxia-pharmaceuticals-ep-104iar-for-the-treatment-of-knee-osteoarthritis-302275992.html
+- https://www.prnewswire.com/news-releases/eupraxia-pharmaceuticals-reports-positive-topline-data-in-its-phase-2b-osteoarthritis-trial-with-ep-104iar-301862773.html
+- https://www.newswire.ca/news-releases/eupraxia-pharmaceuticals-receives-u-s-fda-fast-track-designation-for-ep-104iar-in-treatment-of-osteoarthritis-829294221.html
+- https://lifesciencesbc.ca/members/eupraxia-pharmaceuticals-initiates-phase-3-development-program-for-ep-104iar/
+- https://www.globenewswire.com/news-release/2025/11/04/3180937/0/en/Eupraxia-Pharmaceuticals-Reports-Third-Quarter-2025-Financial-Results.html
+- https://www.globenewswire.com/news-release/2026/05/12/3293518/0/en/Eupraxia-Pharmaceuticals-Reports-First-Quarter-2026-Financial-Results.html
+- https://www.globenewswire.com/news-release/2026/08/11/3343238/0/en/eupraxia-pharmaceuticals-reports-second-quarter-2026-financial-results.html

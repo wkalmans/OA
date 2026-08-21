@@ -199,6 +199,14 @@ def flatten_study(s):
         cleaned = clean_asset_name(raw_name)
         if not cleaned:
             continue
+        # some raw names only look like an asset because of a "Comparator:"
+        # or dosing-regimen prefix/suffix (e.g. "Comparator: placebo /
+        # Duration of Treatment: 24 weeks") - once normalize_name strips
+        # that framing, what's left may be a bare placebo/control mention.
+        # Drop those too; don't let them survive as a fake asset (or worse,
+        # act as a false merge-link for unrelated drugs' "(Placebo)" notes).
+        if normalize_name(cleaned) in _NON_LINK_KEYS:
+            continue
         interventions.append({"name": cleaned, "type": i.get("type")})
 
     return {
@@ -254,18 +262,30 @@ def strip_trailing_paren(name):
 _SUFFIX_MERGE_PATTERN = re.compile(r"^(.{4,}?)-\d{1,3}$")
 
 
+# Generic/near-empty keys that must never be used as a parenthetical
+# merge-link - otherwise unrelated drugs whose ONLY commonality is a
+# leftover "(Placebo)"-style parenthetical get merged into one nonsense
+# row (found via the semaglutide/rofecoxib/salmon-calcitonin mixup: a
+# malformed "Comparator: placebo / Duration of Treatment..." name reduced
+# to base key "placebo" after cleanup, which then acted as a false link
+# target for every OTHER trial's "(Placebo)" parenthetical).
+_NON_LINK_KEYS = {"", "placebo", "vehicle", "saline", "sham", "control", "standard", "treatment", "drug"}
+
+
 def canonicalize_asset_key(name, all_base_keys):
     """Resolve a display name to a grouping key. When a name has a trailing
     parenthetical (e.g. 'PF-04383119 (tanezumab)') and the parenthetical
     text is itself the base name of some OTHER intervention in this
     dataset, treat that as the same asset and key off the parenthetical
     (the shared name is the link). Otherwise a parenthetical is treated as
-    a descriptive note, not an identifier, and is ignored for keying."""
+    a descriptive note, not an identifier, and is ignored for keying.
+    Generic words (placebo, vehicle, ...) are never valid link targets."""
     base_key = normalize_name(strip_trailing_paren(name))
     m = _PAREN_PATTERN.search(name)
     if m:
         paren_key = normalize_name(m.group(1))
-        if paren_key in all_base_keys and paren_key != base_key:
+        if (paren_key in all_base_keys and paren_key != base_key
+                and paren_key not in _NON_LINK_KEYS and len(paren_key) >= 3):
             return paren_key
     return base_key
 

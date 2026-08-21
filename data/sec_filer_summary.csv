@@ -1,0 +1,21 @@
+company_name,filer_type,ticker,filings_indexed
+Eli Lilly and Company,US domestic filer (10-K/10-Q),LLY,64
+Pfizer,US domestic filer (10-K/10-Q),PFE,87
+Novartis Pharmaceuticals,Foreign private issuer (20-F/6-K),NVS,596
+Novo Nordisk A/S,Foreign private issuer (20-F/6-K),NVO,903
+Regeneron Pharmaceuticals,US domestic filer (10-K/10-Q),REGN,125
+"Pacira Pharmaceuticals, Inc",US domestic filer (10-K/10-Q),PCRX,215
+"Biosplice Therapeutics, Inc.",private / no SEC record,-,0
+"Kolon TissueGene, Inc.",private / no SEC record,-,0
+Organon and Co,US domestic filer (10-K/10-Q),OGN,69
+"Johnson & Johnson Pharmaceutical Research & Development, L.L.C.",US domestic filer (10-K/10-Q),JNJ,136
+GlaxoSmithKline,Foreign private issuer (20-F/6-K),GSK,912
+AstraZeneca,Foreign private issuer (20-F/6-K),AZN,825
+Boehringer Ingelheim,private / no SEC record,-,0
+Grünenthal GmbH,private / no SEC record,-,0
+Centrexion Therapeutics,private / no SEC record,-,0
+Eupraxia Pharmaceuticals Inc.,Canadian MJDS filer (40-F/6-K),EPRX,90
+Genascence Corporation,private / no SEC record,-,0
+Levicept,private / no SEC record,-,0
+"Unity Biotechnology, Inc.",US domestic filer (10-K/10-Q),-,127
+Merck Sharp & Dohme LLC,US domestic filer (10-K/10-Q),MRK,117

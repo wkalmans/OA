@@ -51,22 +51,40 @@ python3 scripts/pull_openfda_marketed.py
 python3 scripts/pull_clinicaltrials.py
 ```
 
-### `sources/` and `companies/` — where future documents will live (Phase 2, not yet populated)
+### `companies/` — per-company tracking (Phase 2, in progress)
 
-Folders are set up to hold the documents the full competitive intelligence
-agent will gather per company/asset:
+One folder per shortlisted competitor (the 20 marked in `data/companies.csv`),
+each containing:
 
-- `sources/press_releases/`
-- `sources/investor_decks/` (corporate & investor day decks)
-- `sources/sec_filings/` (10-K, 10-Q, S-1)
-- `sources/investor_days/`
-- `sources/jpm_healthcare_conference/`
-- `sources/pipeline_updates/`
-- `companies/` — will hold a per-company folder once we've prioritized which competitors to track closely
+- `company_profile.md` — ticker, SEC CIK, filer type, filing count
+- `sec_filings.csv` — indexed 10-K / 10-Q / S-1 / 20-F / 40-F / 6-K / 8-K filings with direct links
+- `press_releases/`, `decks/`, `filing_documents/`, `pipeline_updates/` — empty, for documents pulled next
+
+Run `python3 scripts/pull_sec_filings.py` to (re)build these.
+
+**Why 8-K/6-K filings matter here:** there's no separate SEC form for
+"investor deck" or "JPM presentation" — companies typically furnish these
+as *exhibits* to an 8-K (US filers) or 6-K (foreign filers), usually under
+Item 7.01 (Reg FD disclosure). The filing index captures all of these; the
+exhibit-level slide decks themselves still need to be pulled per filing.
+
+**SEC coverage summary** (`data/sec_filer_summary.csv`):
+
+| Filer type | Companies |
+|---|---|
+| US domestic (10-K/10-Q) | Eli Lilly, Pfizer, Regeneron, Pacira, Organon, J&J, Merck, Unity Biotechnology |
+| Foreign private issuer (20-F/6-K) | Novartis, Novo Nordisk, GSK, AstraZeneca |
+| Canadian MJDS (40-F/6-K) | Eupraxia |
+| No SEC record (private) | Biosplice, Kolon TissueGene, Boehringer Ingelheim, Grünenthal, Centrexion, Genascence, Levicept |
+
+Seven of the twenty shortlisted companies are privately held (or, like
+Kolon TissueGene, only file exempt-offering notices) — no 10-K/10-Q/S-1
+will ever exist for these. They still need tracking, just through press
+releases and news rather than SEC filings.
 
 ## Next steps
 
-1. Review `data/companies.csv` and mark which competitors matter most (`track_priority` column)
-2. Review `data/oa_pipeline_branded_assets.csv` for miscategorized entries
-3. Start pulling source documents (press releases, filings, decks) for the prioritized companies
+1. Pull actual press releases / investor decks for the SEC-covered companies (start from the 8-K/6-K Item 7.01 filings)
+2. Set up news/press-release tracking for the 7 private companies (no SEC filings to lean on)
+3. Review `data/oa_pipeline_branded_assets.csv` for any remaining miscategorized entries
 4. Build the "said vs. did" longitudinal tracking record

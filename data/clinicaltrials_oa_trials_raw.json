@@ -1591,10 +1591,6 @@
       {
         "name": "Celecoxib 100 mg",
         "type": "DRUG"
-      },
-      {
-        "name": "Celecoxib 100 mg Matching Placebo",
-        "type": "DRUG"
       }
     ]
   },
@@ -3461,10 +3457,6 @@
       {
         "name": "MT-5547",
         "type": "DRUG"
-      },
-      {
-        "name": "MT-5547-matching placebo",
-        "type": "DRUG"
       }
     ]
   },
@@ -4546,10 +4538,6 @@
     "interventions": [
       {
         "name": "Tapentadol ER (100 to 250 mg twice daily)",
-        "type": "DRUG"
-      },
-      {
-        "name": "Matching Placebo (twice daily)",
         "type": "DRUG"
       },
       {
@@ -9497,10 +9485,6 @@
       {
         "name": "Etoricoxib 50 mg 4% DMSO",
         "type": "DRUG"
-      },
-      {
-        "name": "Matching Placebo to Etoricoxib 50 mg 4% DMSO Gel",
-        "type": "DRUG"
       }
     ]
   },
@@ -11086,7 +11070,7 @@
         "type": "DRUG"
       },
       {
-        "name": "Comparators: ibuprofen and placebo",
+        "name": "Comparators: ibuprofen",
         "type": "DRUG"
       }
     ]
@@ -11655,7 +11639,7 @@
         "type": "DRUG"
       },
       {
-        "name": "tramadol hydrochloride / acetaminophen and placebo",
+        "name": "tramadol hydrochloride / acetaminophen",
         "type": "DRUG"
       }
     ]
@@ -13362,10 +13346,6 @@
     "conditions": "Osteoarthritis of the Knee",
     "interventions": [
       {
-        "name": "Matching Placebo",
-        "type": "DRUG"
-      },
-      {
         "name": "GRT6005",
         "type": "DRUG"
       },
@@ -14745,10 +14725,6 @@
       {
         "name": "Axolotl Ambient",
         "type": "BIOLOGICAL"
-      },
-      {
-        "name": "\"Drug/Placebo: 0.9% Normal Saline\"",
-        "type": "DRUG"
       }
     ]
   },
@@ -15236,7 +15212,7 @@
     "conditions": "Knee Osteoarthritis",
     "interventions": [
       {
-        "name": "UBX0101 or placebo",
+        "name": "UBX0101",
         "type": "DRUG"
       }
     ]
@@ -16945,14 +16921,6 @@
       {
         "name": "Naproxen",
         "type": "DRUG"
-      },
-      {
-        "name": "Fasinumab-matching placebo",
-        "type": "DRUG"
-      },
-      {
-        "name": "Naproxen-matching placebo",
-        "type": "DRUG"
       }
     ]
   },
@@ -17283,10 +17251,6 @@
     "interventions": [
       {
         "name": "Fasinumab",
-        "type": "DRUG"
-      },
-      {
-        "name": "Matching placebo",
         "type": "DRUG"
       }
     ]
@@ -18061,10 +18025,6 @@
     "interventions": [
       {
         "name": "REGN5069",
-        "type": "DRUG"
-      },
-      {
-        "name": "Matching Placebo",
         "type": "DRUG"
       }
     ]

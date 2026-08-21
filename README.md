@@ -28,6 +28,18 @@ and FDA data are pulled by keyword/rule matching, so some entries may be
 miscategorized or missing. Treat these CSVs as living documents — add,
 correct, or delete rows as we confirm details.
 
+**Name consolidation:** ClinicalTrials.gov records the same real-world drug
+under many different literal strings across trials — dose variants
+("Tanezumab 5 mg" vs "Tanezumab 10 mg"), sponsor code names before an INN is
+assigned ("SM04690" vs "Lorecivivint"), formulation/route noise, and
+placebo-comparator arms mislabeled with the drug's name. The pull script
+merges these into one row per real asset and records what got merged in the
+`name_variants_merged` column, so nothing is silently dropped — check that
+column if a row's trial count looks off. Some free-text dosing-regimen
+variants (e.g. "TPX-100 200mg, Once weekly for 4 weeks") aren't fully
+merged and may still appear as separate rows; this is a known limitation of
+rule-based matching, not a data error.
+
 ### `scripts/` — how the data gets refreshed
 
 - `pull_clinicaltrials.py` — re-pulls the ClinicalTrials.gov pipeline data and rebuilds the three classified asset lists

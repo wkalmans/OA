@@ -136,18 +136,28 @@ page).
 
 ### Weekly automation (Phase 5)
 
-A scheduled cloud routine ("OA Weekly Refresh") runs every Monday. Each run:
-1. Re-pulls ClinicalTrials.gov and the FDA marketed-drug list
-2. Re-pulls SEC filings for the 20 tracked companies
-3. Checks each company for material news since the last run (new filings, press releases, trial results, PubMed) and updates `companies/<name>/oa_profile.md` with a new dated entry when something changed
-4. Updates `data/dashboard_status.json` to reflect any status changes
-5. Flags any new OA drug/company not yet on the tracked list into `new_candidates` (never auto-adds it to the main board — that's a judgment call left for review)
-6. Rebuilds and republishes the dashboard to the same URL
-7. Commits and pushes everything, with a summary of what changed
+A scheduled cloud routine, **"OA Weekly Refresh"** (id `trig_01FNBBg6KqHKDcbcpjysy3AY`),
+runs every Sunday 8pm Central. Manage/pause/edit it at
+https://claude.ai/code/routines.
 
-Manage it at https://claude.ai/code/routines. New candidates surface in
-their own "New Candidates" section at the bottom of the dashboard until
-promoted into the tracked list by hand.
+**Cost-tiered, not a full sweep every week:**
+1. Always (cheap): re-pulls ClinicalTrials.gov, the FDA marketed-drug list, and the SEC filing index for all 20 tracked companies
+2. Checks `data/last_full_sweep.txt` — if it's been 28+ days (or the file doesn't exist), this run is a **full sweep**: deep-check all 20 companies. Otherwise it's a **light run**: only deep-check the SEC-covered companies whose filing index actually changed this week (via `git diff`), skipping the 7 privately-held companies (no filings to diff against — they're only caught in the monthly full sweep)
+3. Deep-check = a web search + PubMed check + a skim of any new SEC filing for that company's OA asset; if something material turns up, it's appended (not rewritten) to `companies/<name>/oa_profile.md` and `data/dashboard_status.json` is updated
+4. Flags any new OA drug/company not yet on the tracked list into `new_candidates` (never auto-adds it to the main board — that's a judgment call left for review)
+5. Rebuilds and republishes the dashboard to the same URL
+6. Commits and pushes everything to GitHub
+7. Emails a plain-language summary to wkalmans@lontraventures.com of what changed (or says plainly if nothing did)
+
+New candidates surface in their own "New Candidates" section at the bottom
+of the dashboard until promoted into the tracked list by hand.
+
+**Note:** the `OA` GitHub repo had to be made public to let the routine's
+GitHub App access it — Claude's GitHub App installation on a specific
+private repo requires a Team/Enterprise claude.ai plan, which this account
+isn't on. The repo was scanned for secrets before flipping visibility
+(none found) — everything in it is built from public sources (SEC filings,
+ClinicalTrials.gov, PubMed, company disclosures) anyway.
 
 ## Next steps
 

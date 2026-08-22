@@ -140,14 +140,20 @@ A scheduled cloud routine, **"OA Weekly Refresh"** (id `trig_01FNBBg6KqHKDcbcpjy
 runs every Sunday 8pm Central. Manage/pause/edit it at
 https://claude.ai/code/routines.
 
-**Cost-tiered, not a full sweep every week:**
-1. Always (cheap): re-pulls ClinicalTrials.gov, the FDA marketed-drug list, and the SEC filing index for all 20 tracked companies
-2. Checks `data/last_full_sweep.txt` — if it's been 28+ days (or the file doesn't exist), this run is a **full sweep**: deep-check all 20 companies. Otherwise it's a **light run**: only deep-check the SEC-covered companies whose filing index actually changed this week (via `git diff`), skipping the 7 privately-held companies (no filings to diff against — they're only caught in the monthly full sweep)
-3. Deep-check = a web search + PubMed check + a skim of any new SEC filing for that company's OA asset; if something material turns up, it's appended (not rewritten) to `companies/<name>/oa_profile.md` and `data/dashboard_status.json` is updated
-4. Flags any new OA drug/company not yet on the tracked list into `new_candidates` (never auto-adds it to the main board — that's a judgment call left for review)
-5. Rebuilds and republishes the dashboard to the same URL
-6. Commits and pushes everything to GitHub
-7. Emails a plain-language summary to wkalmans@lontraventures.com of what changed (or says plainly if nothing did)
+**Known platform limitation:** the cloud sandbox this routine runs in
+permanently blocks direct network access to clinicaltrials.gov, api.fda.gov,
+sec.gov/data.sec.gov, and eutils.ncbi.nlm.nih.gov (confirmed on the first
+run, both via raw HTTP and the WebFetch tool). So the weekly routine does
+**not** run `scripts/pull_*.py` itself — those need real network access,
+which only exists locally (see "Monthly local refresh" below). The routine
+works entirely from `WebSearch` instead:
+
+1. Checks `data/last_full_sweep.txt` — if it's been 28+ days (or the file doesn't exist), this run is a **full sweep**: 2-3 web searches per company across all 20, including a check against any expected event date noted in that company's "Discrepancies / Watch Items." Otherwise it's a **light run**: one web search per company, a quick pulse-check
+2. If something material turns up, it's appended (not rewritten) to `companies/<name>/oa_profile.md` and `data/dashboard_status.json` is updated
+3. Best-effort search for new OA companies/assets not yet tracked, into `new_candidates` (never auto-adds to the main board — that's a judgment call left for review)
+4. Rebuilds and republishes the dashboard to the same URL
+5. Commits and pushes everything to GitHub
+6. Emails a plain-language summary to wkalmans@lontraventures.com of what changed (or says plainly if nothing did)
 
 New candidates surface in their own "New Candidates" section at the bottom
 of the dashboard until promoted into the tracked list by hand.
@@ -158,6 +164,22 @@ private repo requires a Team/Enterprise claude.ai plan, which this account
 isn't on. The repo was scanned for secrets before flipping visibility
 (none found) — everything in it is built from public sources (SEC filings,
 ClinicalTrials.gov, PubMed, company disclosures) anyway.
+
+### Monthly local refresh (Phase 6)
+
+Since the cloud routine can't reach ClinicalTrials.gov/openFDA/SEC EDGAR,
+those three pull scripts run monthly instead from this machine (which has
+normal network access) via a `launchd` job — macOS's built-in scheduler,
+not something that depends on any chat session staying open:
+
+- **Job:** `com.wkalmans.oa-monthly-refresh` (`~/Library/LaunchAgents/com.wkalmans.oa-monthly-refresh.plist`)
+- **Schedule:** 1st of every month, 7am local time — only fires while the Mac is on and you're logged in; if it's asleep at that moment, launchd generally catches it up shortly after wake, but isn't guaranteed
+- **What it runs:** `scripts/monthly_local_refresh.sh` — pulls latest from GitHub, re-runs the three pull scripts, commits and pushes if anything changed
+- **Log:** `scripts/monthly_refresh.log` (local only, not committed to git)
+
+To check on it: `launchctl list com.wkalmans.oa-monthly-refresh`. To run it
+manually any time: `bash scripts/monthly_local_refresh.sh`. To disable:
+`launchctl unload ~/Library/LaunchAgents/com.wkalmans.oa-monthly-refresh.plist`.
 
 ## Next steps
 

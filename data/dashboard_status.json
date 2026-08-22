@@ -119,8 +119,8 @@
     {
       "name": "Eli Lilly", "slug": "eli_lilly", "status": "momentum",
       "asset": "Retatrutide, orforglipron, eloralintide", "mechanism": "GLP-1/GIP/amylin-class (via weight loss)",
-      "finding": "Retatrutide's OA data was the field's best recent news: <b>positive Phase 3 topline in Dec 2025</b> (WOMAC pain improved ~75% vs. ~40% placebo), with a single BLA covering obesity + sleep apnea + knee OA planned for <b>Q1 2027</b>. Orforglipron and eloralintide's own OA readouts aren't due until 2028; a fourth asset, LY4065967, has almost no public paper trail.",
-      "date_label": "Positive Phase 3, Dec 2025", "deep_dive": true, "also_note": null, "new": false
+      "finding": "Retatrutide's OA data was the field's best recent news: <b>positive Phase 3 topline in Dec 2025</b> (WOMAC pain improved ~75% vs. ~40% placebo), with a single BLA covering obesity + sleep apnea + knee OA planned for <b>Q1 2027</b>. That filing now carries added regulatory risk: Lilly and the FDA are still litigating whether retatrutide legally qualifies as a biologic at all (12-yr vs. 5-yr exclusivity), with oral arguments set for <b>Sept 24, 2026</b> &mdash; about six months before the targeted filing. Orforglipron and eloralintide's own OA readouts aren't due until 2028; a fourth asset, LY4065967, has almost no public paper trail.",
+      "date_label": "BLA classification dispute unresolved, Aug 2026", "deep_dive": true, "also_note": null, "new": true
     },
     {
       "name": "Levicept", "slug": "levicept", "status": "momentum",
@@ -135,5 +135,14 @@
       "date_label": "No pipeline as of 2026", "deep_dive": false, "also_note": null, "new": false
     }
   ],
-  "new_candidates": []
+  "new_candidates": [
+    {"name": "Paradigm Biopharmaceuticals", "asset": "Pentosan Polysulfate Sodium (PPS)", "note": "ASX-listed company with a Phase 3 program (once-weekly injectable PPS) already recruiting for knee OA pain/possible disease modification (NCT06917404); one of the more advanced non-Big-Pharma OA assets not yet on this board.", "found_date": "2026-08-22"},
+    {"name": "Medipost", "asset": "CARTISTEM (allogeneic cord-blood-derived chondrocyte cell therapy)", "note": "Already conditionally approved in South Korea for cartilage defects; now in a Phase 3 US trial combining it with debridement for knee OA (NCT07339111).", "found_date": "2026-08-22"},
+    {"name": "CellSeed", "asset": "CLS2901C (allogeneic chondrocyte sheets)", "note": "Phase 3, recruiting, cell-sheet cartilage-repair approach for knee OA (NCT06549686).", "found_date": "2026-08-22"},
+    {"name": "Hangzhou Sciwind Biosciences", "asset": "Ecnoglutide", "note": "Phase 3 (not yet recruiting) GLP-1 receptor agonist for knee OA (NCT07734311) — a second company now testing the GLP-1-for-OA mechanism that Lilly's retatrutide just validated.", "found_date": "2026-08-22"},
+    {"name": "Saol Therapeutics", "asset": "SL1002", "note": "Phase 3, recruiting, for knee OA pain (NCT07226258).", "found_date": "2026-08-22"},
+    {"name": "Fujian Shengdi Pharmaceutical", "asset": "Ribupatide Injection", "note": "Phase 3 (not yet recruiting) injectable candidate for knee OA (NCT07709910).", "found_date": "2026-08-22"},
+    {"name": "Doron Therapeutics", "asset": "PTP-01", "note": "Phase 3, recruiting, for knee OA (NCT07219771).", "found_date": "2026-08-22"},
+    {"name": "TRB Chemedica", "asset": "Artrodar (diacerein)", "note": "Marketed anti-IL-1 DMOAD-class drug outside the US, now in a Phase 3 US trial for knee OA (NCT04318041).", "found_date": "2026-08-22"}
+  ]
 }

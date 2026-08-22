@@ -1,0 +1,139 @@
+{
+  "last_refreshed": "2026-08-22",
+  "status_labels": {
+    "failed": "Discontinued / Failed",
+    "pending": "Active — Data Pending",
+    "momentum": "Positive Data / Momentum",
+    "none": "No Current Pipeline"
+  },
+  "status_order": ["failed", "pending", "momentum", "none"],
+  "section_subtext": {
+    "failed": "Companies whose primary OA program has been discontinued, or whose pivotal trial(s) failed with no confirmed path forward.",
+    "pending": "Programs still in active development — dosing, recruiting, or awaiting a regulatory decision. No verdict yet, or a verdict still being contested.",
+    "momentum": "Programs with genuinely positive recent data and forward motion.",
+    "none": "Shortlisted for historical OA-related trial activity, but with no drug currently in development."
+  },
+  "companies": [
+    {
+      "name": "AstraZeneca", "slug": "astrazeneca", "status": "failed",
+      "asset": "MEDI7352", "mechanism": "NGF/TNF-α bispecific fusion protein",
+      "finding": "AZ's most advanced OA asset was <b>discontinued around Q1 2025</b> — not a trial failure, but part of a full pain/neuroscience R&amp;D exit. Two earlier candidates (MEDI-578, AZD1386) were dropped in the early 2010s. No musculoskeletal category remains on AZ's pipeline page.",
+      "date_label": "Discontinued ~Apr 2025", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Boehringer Ingelheim", "slug": "boehringer_ingelheim", "status": "failed",
+      "asset": "BI 1026706", "mechanism": "Bradykinin B1-receptor antagonist",
+      "finding": "Its only OA trial (Phase 1, 2014) produced no efficacy readout, and later attempts in two other indications also failed (2020, 2023). No trial of any kind registered since — effectively shelved.",
+      "date_label": "No activity since 2014", "deep_dive": false, "also_note": "Also markets: Mobic (meloxicam)", "new": false
+    },
+    {
+      "name": "Centrexion", "slug": "centrexion", "status": "failed",
+      "asset": "CNTX-4975", "mechanism": "Trans-capsaicin intra-articular injection",
+      "finding": "Both pivotal Phase 3 trials (VICTORY-1/2) <b>missed their individual primary endpoint</b> around 2021. A pooled post-hoc analysis was positive at ACR 2023, but no confirmed regulatory path or update has surfaced since.",
+      "date_label": "Trials missed endpoint, 2021", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Grünenthal", "slug": "grunenthal", "status": "failed",
+      "asset": "RTX-GRT7039", "mechanism": "Resiniferatoxin (TRPV1 agonist)",
+      "finding": "A 3-trial global Phase 3 program completed by mid-2025. Posted results show only a marginal pain gap over placebo, and the asset has since <b>quietly disappeared from Grünenthal's own pipeline page</b> despite 2023 guidance of a 2025 filing. Inferred discontinued — no company confirmation found.",
+      "date_label": "Inferred discontinued, 2025", "deep_dive": false, "also_note": "Also markets: Tapentadol (originator)", "new": false
+    },
+    {
+      "name": "GSK", "slug": "gsk", "status": "failed",
+      "asset": "GSK3858279", "mechanism": "Anti-CCL17 antibody",
+      "finding": "Phase 2 trial &ldquo;MARS-17&rdquo; was <b>terminated for futility in late 2024</b>. A second candidate, otilimab (anti-GM-CSF), had only marginal hand-OA data and died with its broader rheumatoid arthritis program in Oct 2022. No active OA pipeline remains.",
+      "date_label": "Terminated, late 2024", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Johnson &amp; Johnson", "slug": "jnj", "status": "failed",
+      "asset": "Fulranumab (JNJ-42160443)", "mechanism": "Anti-NGF antibody",
+      "finding": "Phase 3 OA program <b>discontinued March 2016</b> for portfolio prioritization; rights returned to originator Amgen. No revival found, and no other confirmed J&amp;J OA pipeline asset exists today.",
+      "date_label": "Discontinued 2016", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Kolon TissueGene", "slug": "kolon_tissuegene", "status": "failed",
+      "asset": "TG-C (Invossa)", "mechanism": "Allogeneic cell + TGF-β1 gene therapy",
+      "finding": "Korean approval was <b>revoked in 2019</b> after a cell-identity mislabeling scandal. The first of two US pivotal trials, ACTiVION-II, <b>missed both co-primary endpoints in July 2026</b>, triggering a sharp stock drop. The second trial's October 2026 readout is described by the company as decisive.",
+      "date_label": "ACTiVION-II missed, Jul 2026", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Merck (MSD)", "slug": "merck_msd", "status": "failed",
+      "asset": "Historical: rofecoxib, odanacatib", "mechanism": "COX-2 inhibitor / cathepsin K inhibitor",
+      "finding": "No active OA program today. Rofecoxib (Vioxx) was <b>withdrawn in 2004</b> over cardiovascular risk; odanacatib was discontinued in 2016 over stroke risk.",
+      "date_label": "Vioxx withdrawn, 2004", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Novartis", "slug": "novartis", "status": "failed",
+      "asset": "LNA043", "mechanism": "Cartilage-regeneration DMOAD",
+      "finding": "Early Phase 1/2a data looked encouraging, but the pivotal Phase 2b trial (ONWARDS) was <b>terminated in 2024</b> after showing no dose-response on cartilage thickness — every dose arm lost cartilage at essentially the placebo rate. Discontinued; absent from the FY2025 20-F entirely.",
+      "date_label": "Discontinued 2024", "deep_dive": true, "also_note": null, "new": false
+    },
+    {
+      "name": "Pfizer", "slug": "pfizer", "status": "failed",
+      "asset": "Tanezumab (PF-04383119)", "mechanism": "Anti-NGF antibody",
+      "finding": "Phase 3 efficacy was real, but joint-safety signals (rapidly progressive OA) drove a 19&ndash;1 FDA Advisory Committee vote against approval. Pfizer and Lilly discontinued the global program in <b>October 2021</b>. Tanezumab hasn't appeared in Pfizer's 10-K pipeline text in any year since.",
+      "date_label": "Discontinued Oct 2021", "deep_dive": true, "also_note": null, "new": false
+    },
+    {
+      "name": "Regeneron", "slug": "regeneron", "status": "failed",
+      "asset": "Fasinumab", "mechanism": "Anti-NGF antibody (w/ Teva)",
+      "finding": "Phase 3 program hit the same joint-safety wall as tanezumab and was <b>discontinued in Nov 2022</b>. Regeneron and Teva have continued publishing the already-completed trial data through 2026 — legacy reporting, not renewed development.",
+      "date_label": "Discontinued Nov 2022", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Unity Biotechnology", "slug": "unity_biotechnology", "status": "failed",
+      "asset": "UBX0101", "mechanism": "Senolytic (p53/MDM2 inhibitor)",
+      "finding": "Failed its Phase 2 primary endpoint in <b>Aug 2020</b>. The company pivoted to ophthalmology senolytics, then began winding down in 2025: Nasdaq delisting, shareholder-approved liquidation, and formal <b>SEC deregistration in Jan 2026</b>.",
+      "date_label": "Company dissolved, Jan 2026", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Biosplice", "slug": "biosplice", "status": "pending",
+      "asset": "Lorecivivint (SM04690)", "mechanism": "Wnt-pathway inhibitor (intra-articular)",
+      "finding": "All three pivotal Phase 3 trials <b>missed their primary endpoint</b> in the full patient population (2022, 2024). Biosplice filed an NDA anyway in <b>January 2026</b>, leaning on a long-term extension trial and post-hoc subgroup data — with no Fast Track or Breakthrough designation found. The most consequential open question on this board.",
+      "date_label": "NDA filed despite misses, Jan 2026", "deep_dive": true, "also_note": null, "new": false
+    },
+    {
+      "name": "Eupraxia", "slug": "eupraxia", "status": "pending",
+      "asset": "EP-104IAR", "mechanism": "Extended-release intra-articular steroid",
+      "finding": "Positive Phase 2b data (published in Lancet Rheumatology) and FDA Fast Track once made this a strong prospect. A Phase 3 was announced in Feb 2024, but no evidence of actual dosing was found, and the company now says it's <b>&ldquo;evaluating funding alternatives&rdquo;</b> — effectively on hold, seeking a partner.",
+      "date_label": "On hold, seeking partner", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Genascence", "slug": "genascence", "status": "pending",
+      "asset": "GNSC-001", "mechanism": "IL-1Ra gene therapy",
+      "finding": "Phase 1b met its 12-month safety endpoint in <b>May 2025</b>, and the FDA has granted both Fast Track and RMAT designation. A Phase 2b/3 design is reportedly agreed with FDA for a 2026 start — but no confirmation of actual dosing was found as of this pull.",
+      "date_label": "Fast Track granted, 2025", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Novo Nordisk", "slug": "novo_nordisk", "status": "pending",
+      "asset": "NNC0487-0111 (zenagamtide)", "mechanism": "GLP-1/amylin dual agonist",
+      "finding": "Phase 3 trials AMAZE&nbsp;5 and AMAZE&nbsp;6 are recruiting, with a 2028 completion estimate. The program was <b>first named in an SEC filing only in Q1 2026</b> — a genuinely early-stage bet, not yet a story with a verdict.",
+      "date_label": "Recruiting, no data yet", "deep_dive": true, "also_note": null, "new": false
+    },
+    {
+      "name": "Pacira", "slug": "pacira", "status": "pending",
+      "asset": "Zilretta (marketed) + PCRX-201", "mechanism": "Steroid injection (marketed) + gene therapy (pipeline)",
+      "finding": "Zilretta had its <b>first-ever revenue decline in FY2025</b> (-1%), though 2026 quarters show reacceleration. PCRX-201's Phase 2 enrollment was announced &ldquo;concluded&rdquo; twice, seven months apart, without reconciliation — flagged, not yet explained.",
+      "date_label": "Revenue declined, FY2025", "deep_dive": true, "also_note": null, "new": false
+    },
+    {
+      "name": "Eli Lilly", "slug": "eli_lilly", "status": "momentum",
+      "asset": "Retatrutide, orforglipron, eloralintide", "mechanism": "GLP-1/GIP/amylin-class (via weight loss)",
+      "finding": "Retatrutide's OA data was the field's best recent news: <b>positive Phase 3 topline in Dec 2025</b> (WOMAC pain improved ~75% vs. ~40% placebo), with a single BLA covering obesity + sleep apnea + knee OA planned for <b>Q1 2027</b>. Orforglipron and eloralintide's own OA readouts aren't due until 2028; a fourth asset, LY4065967, has almost no public paper trail.",
+      "date_label": "Positive Phase 3, Dec 2025", "deep_dive": true, "also_note": null, "new": false
+    },
+    {
+      "name": "Levicept", "slug": "levicept", "status": "momentum",
+      "asset": "LEVI-04", "mechanism": "Anti-NGF/p75 receptor fusion protein",
+      "finding": "A differentiated take on the anti-NGF mechanism that sank tanezumab and fasinumab. Full Phase 2 results (518 patients) <b>published in The Lancet, March 2026</b>: met its primary endpoint at every dose, with no increased joint-safety signal. FDA accepted the IND in Jan 2026.",
+      "date_label": "Phase 2 published, Mar 2026", "deep_dive": false, "also_note": null, "new": false
+    },
+    {
+      "name": "Organon", "slug": "organon", "status": "none",
+      "asset": "—", "mechanism": "No active candidate",
+      "finding": "Organon's own pipeline page lists Women's Health and General Medicine as its sole therapeutic priorities; osteoarthritis isn't mentioned. All OA-linked trial history traces to <b>legacy Merck etoricoxib</b> data, a drug never approved in the US.",
+      "date_label": "No pipeline as of 2026", "deep_dive": false, "also_note": null, "new": false
+    }
+  ],
+  "new_candidates": []
+}

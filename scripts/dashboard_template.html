@@ -1,0 +1,357 @@
+<title>The OA Docket</title>
+<style>
+/* FONTS_PLACEHOLDER */
+
+:root{
+  --bg:#E8E4D7;
+  --surface:#FBF9F3;
+  --surface-2:#F1ECDD;
+  --ink:#211D16;
+  --ink-muted:#655E4E;
+  --ink-faint:#8B846F;
+  --border:#D9D0B8;
+  --border-strong:#C7BC9C;
+  --accent:#A8531E;
+  --accent-ink:#7A3B14;
+  --status-failed:#A83A2C;      --status-failed-bg:#F3E0D9;
+  --status-pending:#2E5F8A;     --status-pending-bg:#DFE7EE;
+  --status-momentum:#2E7D4F;    --status-momentum-bg:#DFEEE2;
+  --status-none:#6B6455;        --status-none-bg:#EAE4D3;
+  --shadow: 0 1px 2px rgba(33,29,22,0.06), 0 1px 1px rgba(33,29,22,0.04);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14161A;
+    --surface:#1C1F24;
+    --surface-2:#20232A;
+    --ink:#ECE7D9;
+    --ink-muted:#A79F8B;
+    --ink-faint:#786F5B;
+    --border:#2E323A;
+    --border-strong:#3B404A;
+    --accent:#DD8A52;
+    --accent-ink:#EFB086;
+    --status-failed:#E17E6E;    --status-failed-bg:#3A2420;
+    --status-pending:#7FACDD;   --status-pending-bg:#1E2C3B;
+    --status-momentum:#7BC697;  --status-momentum-bg:#1C3327;
+    --status-none:#B0A88F;      --status-none-bg:#2B2820;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.2);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14161A;
+  --surface:#1C1F24;
+  --surface-2:#20232A;
+  --ink:#ECE7D9;
+  --ink-muted:#A79F8B;
+  --ink-faint:#786F5B;
+  --border:#2E323A;
+  --border-strong:#3B404A;
+  --accent:#DD8A52;
+  --accent-ink:#EFB086;
+  --status-failed:#E17E6E;    --status-failed-bg:#3A2420;
+  --status-pending:#7FACDD;   --status-pending-bg:#1E2C3B;
+  --status-momentum:#7BC697;  --status-momentum-bg:#1C3327;
+  --status-none:#B0A88F;      --status-none-bg:#2B2820;
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.2);
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Public Sans', -apple-system, sans-serif;
+  font-size:16px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{ background:var(--accent); color:#FBF9F3; }
+
+.wrap{ max-width:1280px; margin:0 auto; padding:2.5rem 1.75rem 5rem; }
+
+/* ---------- Masthead ---------- */
+.masthead{
+  border-top:3px double var(--border-strong);
+  border-bottom:1px solid var(--border-strong);
+  padding:1.4rem 0 1.6rem;
+  margin-bottom:2.25rem;
+}
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.72rem;
+  font-weight:500;
+  letter-spacing:0.11em;
+  text-transform:uppercase;
+  color:var(--accent-ink);
+  margin:0 0 0.65rem;
+}
+h1{
+  font-family:'Source Serif 4', Georgia, serif;
+  font-weight:700;
+  font-size:clamp(1.85rem, 1.4rem + 1.9vw, 2.85rem);
+  line-height:1.08;
+  letter-spacing:-0.01em;
+  margin:0 0 0.55rem;
+  text-wrap:balance;
+  max-width:24ch;
+}
+.dek{
+  font-size:1.02rem;
+  color:var(--ink-muted);
+  max-width:56ch;
+  margin:0 0 0.9rem;
+}
+.meta-line{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.76rem;
+  color:var(--ink-faint);
+  letter-spacing:0.01em;
+}
+
+/* ---------- Headline stat + distribution ---------- */
+.stat-band{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2.25rem;
+  align-items:flex-end;
+  padding:1.6rem 0 1.9rem;
+  margin-bottom:2rem;
+  border-bottom:1px solid var(--border);
+}
+.hero-stat{ flex:0 0 auto; }
+.hero-stat .num{
+  font-family:'Source Serif 4', serif;
+  font-weight:700;
+  font-size:4.2rem;
+  line-height:0.9;
+  color:var(--status-failed);
+  letter-spacing:-0.02em;
+}
+.hero-stat .num sup{
+  font-size:1.7rem;
+  font-weight:600;
+  color:var(--ink-faint);
+  top:-1.6rem;
+  margin-left:0.15rem;
+}
+.hero-stat .cap{
+  font-size:0.88rem;
+  color:var(--ink-muted);
+  max-width:20ch;
+  margin-top:0.35rem;
+}
+
+.dist{ flex:1 1 320px; min-width:280px; }
+.dist-bar{
+  display:flex;
+  width:100%;
+  height:15px;
+  border:1px solid var(--border-strong);
+  overflow:hidden;
+  margin-bottom:0.7rem;
+}
+.dist-seg{ height:100%; }
+.dist-legend{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.35rem 1.3rem;
+  font-size:0.82rem;
+  color:var(--ink-muted);
+}
+.dist-legend .item{ display:flex; align-items:center; gap:0.45rem; white-space:nowrap; }
+.dist-legend .dot{ width:9px; height:9px; flex:0 0 auto; }
+.dist-legend b{ color:var(--ink); font-variant-numeric:tabular-nums; font-weight:600; }
+
+/* ---------- Section ---------- */
+.section{ margin-bottom:2.6rem; }
+.section-head{
+  display:flex;
+  align-items:baseline;
+  gap:0.7rem;
+  margin-bottom:1.1rem;
+  padding-bottom:0.55rem;
+  border-bottom:1px solid var(--border);
+}
+.section-stripe{ width:5px; align-self:stretch; flex:0 0 auto; }
+.section h2{
+  font-family:'Source Serif 4', serif;
+  font-weight:600;
+  font-size:1.32rem;
+  margin:0;
+  letter-spacing:-0.005em;
+}
+.section .count{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.85rem;
+  color:var(--ink-faint);
+}
+.section .subtext{
+  font-size:0.86rem;
+  color:var(--ink-muted);
+  margin:0 0 1.1rem;
+  max-width:70ch;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+  gap:1rem;
+}
+
+/* ---------- Card ---------- */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-left:3px solid var(--stripe, var(--border-strong));
+  box-shadow:var(--shadow);
+  padding:1.05rem 1.15rem 1.1rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.6rem;
+}
+.card-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:0.6rem;
+}
+.card h3{
+  font-family:'Source Serif 4', serif;
+  font-weight:700;
+  font-size:1.08rem;
+  margin:0;
+  line-height:1.25;
+}
+.chip{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.66rem;
+  font-weight:500;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:0.22rem 0.5rem;
+  border:1px solid transparent;
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+.asset-row{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:0.45rem;
+  font-size:0.82rem;
+  color:var(--ink-muted);
+}
+.asset-code{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.76rem;
+  font-weight:500;
+  color:var(--ink);
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  padding:0.08rem 0.4rem;
+}
+.finding{
+  font-size:0.88rem;
+  color:var(--ink);
+  line-height:1.52;
+}
+.finding b{ font-weight:600; }
+.card-foot{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:0.6rem;
+  margin-top:auto;
+  padding-top:0.5rem;
+  border-top:1px solid var(--border);
+}
+.event-date{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.72rem;
+  color:var(--ink-faint);
+  font-variant-numeric:tabular-nums;
+}
+.depth-tag{
+  font-size:0.66rem;
+  font-weight:600;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent-ink);
+  display:flex;
+  align-items:center;
+  gap:0.3rem;
+}
+.depth-tag::before{
+  content:"";
+  width:5px; height:5px;
+  background:var(--accent);
+  display:inline-block;
+}
+.also-note{
+  font-size:0.78rem;
+  color:var(--ink-faint);
+  font-style:italic;
+}
+.new-badge{
+  font-size:0.64rem;
+  font-weight:700;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:var(--accent-ink);
+  border:1px solid var(--accent);
+  padding:0.1rem 0.35rem;
+}
+
+/* ---------- Footer ---------- */
+footer{
+  margin-top:3rem;
+  padding-top:1.5rem;
+  border-top:1px solid var(--border);
+  font-size:0.82rem;
+  color:var(--ink-faint);
+  max-width:75ch;
+  line-height:1.6;
+}
+footer strong{ color:var(--ink-muted); }
+
+@media (max-width:520px){
+  .stat-band{ flex-direction:column; align-items:stretch; gap:1.4rem; }
+  .hero-stat .num{ font-size:3.4rem; }
+}
+</style>
+
+<div class="wrap">
+
+  <div class="masthead">
+    <p class="eyebrow">Competitive Intelligence &middot; Osteoarthritis Therapeutics</p>
+    <h1>What They Said vs. What Happened</h1>
+    <p class="dek">Companies developing osteoarthritis drugs, checked against their own public statements &mdash; SEC filings, trial results, and scientific literature, not press-release framing.</p>
+    <p class="meta-line">{{TOTAL_COMPANIES}} COMPANIES TRACKED &nbsp;/&nbsp; SOURCES: SEC EDGAR, CLINICALTRIALS.GOV, PUBMED, COMPANY DISCLOSURES &nbsp;/&nbsp; LAST REFRESHED: {{LAST_REFRESHED}}</p>
+  </div>
+
+  <div class="stat-band">
+    <div class="hero-stat">
+      <div class="num">{{HERO_NUM}}<sup>/{{HERO_TOTAL}}</sup></div>
+      <div class="cap">{{HERO_CAP}}</div>
+    </div>
+    <div class="dist">
+      <div class="dist-bar">
+        {{DIST_SEGMENTS}}
+      </div>
+      <div class="dist-legend">
+        {{DIST_LEGEND}}
+      </div>
+    </div>
+  </div>
+
+  {{SECTIONS}}
+
+  {{NEW_CANDIDATES_SECTION}}
+
+  <footer>
+    <strong>Methodology.</strong> Status is read from SEC filings (10-K/10-Q/20-F/40-F/6-K/8-K), ClinicalTrials.gov trial records, PubMed literature, and company websites/press releases &mdash; not from a company's own framing of its program. Companies marked &ldquo;deep dive&rdquo; were checked directly against primary SEC filing text; others were checked against public web and literature sources. Findings marked as inferred are based on absence of evidence &#8213; e.g., an asset quietly dropped from a pipeline page &#8213; rather than an explicit company confirmation. Full sourced timelines for every company live in the underlying project as <code>companies/&lt;name&gt;/oa_profile.md</code>. This page refreshes weekly.
+  </footer>
+
+</div>

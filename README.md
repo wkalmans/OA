@@ -112,9 +112,45 @@ merging unrelated drugs (Novo Nordisk's semaglutide OA trial, a Merck
 comparator trial, and a Nordic Bioscience calcitonin trial) into one row -
 see `scripts/pull_clinicaltrials.py` for the fix.
 
+### `dashboard/` — the published visual summary (Phase 4)
+
+A one-page status board ("The OA Docket") summarizing all 20 companies,
+published as a Claude Artifact:
+https://claude.ai/code/artifact/4e30d5fb-3d23-4736-94a7-7350ab24d220
+
+**This is data-driven, not hand-written HTML** — that's what makes it
+possible to update automatically:
+
+| File | Role |
+|---|---|
+| `data/dashboard_status.json` | The only file that should change week to week — per-company status, asset, finding text, key date, and a `new_candidates` list for unreviewed new assets |
+| `scripts/dashboard_template.html` | Page shell/design (masthead, CSS, layout) — shouldn't need to change often |
+| `scripts/fonts_inline.css` | Embedded fonts (Source Serif 4 / Public Sans / IBM Plex Mono), generated once |
+| `scripts/build_dashboard.py` | Reads the JSON + template + fonts, writes `dashboard/oa_dashboard.html` |
+
+To refresh the page: edit `dashboard_status.json`, run
+`python3 scripts/build_dashboard.py`, then republish
+`dashboard/oa_dashboard.html` as a Claude Artifact using the URL above (pass
+it as the `url` parameter so it updates in place instead of creating a new
+page).
+
+### Weekly automation (Phase 5)
+
+A scheduled cloud routine ("OA Weekly Refresh") runs every Monday. Each run:
+1. Re-pulls ClinicalTrials.gov and the FDA marketed-drug list
+2. Re-pulls SEC filings for the 20 tracked companies
+3. Checks each company for material news since the last run (new filings, press releases, trial results, PubMed) and updates `companies/<name>/oa_profile.md` with a new dated entry when something changed
+4. Updates `data/dashboard_status.json` to reflect any status changes
+5. Flags any new OA drug/company not yet on the tracked list into `new_candidates` (never auto-adds it to the main board — that's a judgment call left for review)
+6. Rebuilds and republishes the dashboard to the same URL
+7. Commits and pushes everything, with a summary of what changed
+
+Manage it at https://claude.ai/code/routines. New candidates surface in
+their own "New Candidates" section at the bottom of the dashboard until
+promoted into the tracked list by hand.
+
 ## Next steps
 
 1. Pull actual press-release/deck documents for the SEC-covered companies (start from the 8-K/6-K Item 7.01 filings already indexed)
-2. Set a recurring cadence to re-check the open/unresolved items flagged in each profile (e.g. Kolon TissueGene's Oct 2026 readout, Genascence's Phase 2b/3 start, Eupraxia's partnership search)
+2. Review new candidates the weekly routine surfaces and decide which to promote into the tracked shortlist
 3. Review `data/oa_pipeline_branded_assets.csv` for any remaining miscategorized entries
-4. Decide on a standing format for updating `oa_profile.md` files over time as new news breaks (append vs. rewrite)

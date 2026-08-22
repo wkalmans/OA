@@ -167,12 +167,14 @@ run, both via raw HTTP and the WebFetch tool). So the weekly routine does
 which only exists locally (see "Monthly local refresh" below). The routine
 works entirely from `WebSearch` instead:
 
-1. Checks `data/last_full_sweep.txt` — if it's been 28+ days (or the file doesn't exist), this run is a **full sweep**: 2-3 web searches per company across all 20, including a check against any expected event date noted in that company's "Discrepancies / Watch Items." Otherwise it's a **light run**: one web search per company, a quick pulse-check
-2. If something material turns up, it's appended (not rewritten) to `companies/<name>/oa_profile.md` and `data/dashboard_status.json` is updated
-3. Best-effort search for new OA companies/assets not yet tracked, into `new_candidates` (never auto-adds to the main board — that's a judgment call left for review)
-4. Rebuilds and republishes the dashboard to the same URL
-5. Commits and pushes everything to GitHub
-6. Emails a plain-language summary to wkalmans@lontraventures.com of what changed (or says plainly if nothing did)
+1. Checks `data/last_full_sweep.txt` — if it's been 28+ days (or the file doesn't exist), this run is a **full sweep** (~monthly). Otherwise it's a **light run** (most weeks).
+2. **Light run:** one web search per company, but only the 20 `tier: "core"` companies — a quick pulse-check. The 49 `tier: "extended"` companies are left alone.
+3. **Full sweep:** covers all 69 companies, since this is the run responsible for catching anything the weekly light checks would miss. Core tier gets a thorough 2-3-query pass (including a check against any expected event date noted in that company's "Discrepancies / Watch Items"); extended tier gets one search each — these otherwise get zero ongoing monitoring, so this monthly pass is their only check. Also runs several varied searches ("new osteoarthritis gene therapy trial 2026," "…stem cell trial 2026," "…GLP-1 trial 2026," etc.) specifically to catch brand-new programs not yet tracked at all.
+4. If something material turns up, it's appended (not rewritten) to `companies/<name>/oa_profile.md` and `data/dashboard_status.json` is updated
+5. New companies/assets not yet tracked go into `new_candidates` (never auto-added to the main board — promoting one is a judgment call left for review)
+6. Rebuilds and republishes the dashboard to the same URL
+7. Commits and pushes everything to GitHub
+8. Emails a plain-language summary to wkalmans@lontraventures.com of what changed (or says plainly if nothing did)
 
 New candidates surface in their own "New Candidates" section at the bottom
 of the dashboard until promoted into the tracked list by hand.

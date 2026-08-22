@@ -118,9 +118,9 @@ def main():
         fonts_css = f.read()
 
     total = len(data["companies"])
-    failed_count = len([c for c in data["companies"] if c["status"] == "failed"])
-
     counts = {k: len([c for c in data["companies"] if c["status"] == k]) for k in data["status_order"]}
+    positive_active = counts.get("momentum", 0) + counts.get("pending", 0)
+    positive_pct = round(positive_active / total * 100) if total else 0
     seg_html = "\n".join(
         f'<div class="dist-seg" style="width:{(counts[k]/total*100) if total else 0:.1f}%; background:{STATUS_COLOR_VARS[k]};"></div>'
         for k in data["status_order"] if counts[k] > 0
@@ -137,9 +137,11 @@ def main():
     html = html.replace("/* FONTS_PLACEHOLDER */", fonts_css)
     html = html.replace("{{TOTAL_COMPANIES}}", str(total))
     html = html.replace("{{LAST_REFRESHED}}", data["last_refreshed"])
-    html = html.replace("{{HERO_NUM}}", str(failed_count))
-    html = html.replace("{{HERO_TOTAL}}", str(total))
-    html = html.replace("{{HERO_CAP}}", "primary OA programs discontinued or failed outright")
+    html = html.replace("{{HERO_NUM}}", str(positive_pct))
+    html = html.replace(
+        "{{HERO_CAP}}",
+        f"of tracked programs ({positive_active} of {total}) are active or showing positive data"
+    )
     html = html.replace("{{DIST_SEGMENTS}}", seg_html)
     html = html.replace("{{DIST_LEGEND}}", legend_html)
     html = html.replace("{{SECTIONS}}", sections_html)

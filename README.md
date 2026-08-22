@@ -114,9 +114,28 @@ see `scripts/pull_clinicaltrials.py` for the fix.
 
 ### `dashboard/` — the published visual summary (Phase 4)
 
-A one-page status board ("The OA Docket") summarizing all 20 companies,
-published as a Claude Artifact:
+A one-page status board ("The OA Docket") published as a Claude Artifact:
 https://claude.ai/code/artifact/4e30d5fb-3d23-4736-94a7-7350ab24d220
+
+Sections lead with **Positive Data / Momentum**, then **Active — Data
+Pending**, then **Discontinued / Failed**, then **No Current Pipeline**
+(both the card order and the distribution-bar graphic follow this order —
+controlled by `status_order` in `data/dashboard_status.json`).
+
+**Coverage: 69 companies, two tiers.** The original 20 shortlisted
+companies (above) get the full deep-tracking treatment — SEC filing
+indexes, dated "said vs. did" timelines, weekly monitoring. A second
+tier of 49 smaller/niche companies was added by systematically scanning
+`data/oa_pipeline_branded_assets.csv` for every sponsor with a currently
+active OA trial not already tracked, filtering out generic-comparator
+noise and duplicate entities, then giving each a single lightweight
+research pass (one web search, not a deep dive — proportionate to company
+size). These get a shorter `oa_profile.md` and no SEC filing index, and
+aren't part of the weekly routine's monitoring loop (see below) — they're
+a point-in-time snapshot, refreshed only when this expansion is redone.
+Some turned out to have genuine momentum worth knowing about: Enlivex's
+Allocetra, ICM Co.'s gene therapy ICM-203, OrthoTrophix's TPX-100, and
+Paradigm Biopharmaceuticals' PPS among them.
 
 **This is data-driven, not hand-written HTML** — that's what makes it
 possible to update automatically:

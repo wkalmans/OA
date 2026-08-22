@@ -29,7 +29,8 @@
       "date_label": "Discontinued ~Apr 2025",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Boehringer Ingelheim",
@@ -41,7 +42,8 @@
       "date_label": "No activity since 2014",
       "deep_dive": false,
       "also_note": "Also markets: Mobic (meloxicam)",
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Centrexion",
@@ -53,7 +55,8 @@
       "date_label": "Trials missed endpoint, 2021",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Grünenthal",
@@ -65,7 +68,8 @@
       "date_label": "Inferred discontinued, 2025",
       "deep_dive": false,
       "also_note": "Also markets: Tapentadol (originator)",
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "GSK",
@@ -77,7 +81,8 @@
       "date_label": "Terminated, late 2024",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Johnson &amp; Johnson",
@@ -89,7 +94,8 @@
       "date_label": "Discontinued 2016",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Kolon TissueGene",
@@ -101,7 +107,8 @@
       "date_label": "ACTiVION-II missed, Jul 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Merck (MSD)",
@@ -113,7 +120,8 @@
       "date_label": "Vioxx withdrawn, 2004",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Novartis",
@@ -125,7 +133,8 @@
       "date_label": "Discontinued 2024",
       "deep_dive": true,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Pfizer",
@@ -137,7 +146,8 @@
       "date_label": "Discontinued Oct 2021",
       "deep_dive": true,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Regeneron",
@@ -149,7 +159,8 @@
       "date_label": "Discontinued Nov 2022",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Unity Biotechnology",
@@ -161,7 +172,8 @@
       "date_label": "Company dissolved, Jan 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Biosplice",
@@ -173,7 +185,8 @@
       "date_label": "NDA filed despite misses, Jan 2026",
       "deep_dive": true,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Eupraxia",
@@ -185,7 +198,8 @@
       "date_label": "On hold, seeking partner",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Genascence",
@@ -197,7 +211,8 @@
       "date_label": "Fast Track granted, 2025",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Novo Nordisk",
@@ -209,7 +224,8 @@
       "date_label": "Recruiting, no data yet",
       "deep_dive": true,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Pacira",
@@ -221,7 +237,8 @@
       "date_label": "Revenue declined, FY2025",
       "deep_dive": true,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Eli Lilly",
@@ -233,7 +250,8 @@
       "date_label": "BLA classification dispute unresolved, Aug 2026",
       "deep_dive": true,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Levicept",
@@ -245,7 +263,8 @@
       "date_label": "Phase 2 published, Mar 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "Organon",
@@ -257,7 +276,8 @@
       "date_label": "No pipeline as of 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false
+      "new": false,
+      "tier": "core"
     },
     {
       "name": "4B Technologies Limited",
@@ -269,7 +289,8 @@
       "date_label": "Phase 1, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Anterogen Co., Ltd.",
@@ -281,7 +302,8 @@
       "date_label": "Phase 1, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "CELL Technologies Inc.",
@@ -293,7 +315,8 @@
       "date_label": "Phase 3, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Enlivex Therapeutics Ltd.",
@@ -305,7 +328,8 @@
       "date_label": "Phase I/II, positive 6-month data",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "ICM Co. Ltd.",
@@ -317,7 +341,8 @@
       "date_label": "Phase 1/2a, positive interim data",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Laboratorios Silanes S.A. de C.V.",
@@ -329,7 +354,8 @@
       "date_label": "Phase 3, results pending",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Nova Vita Laboratory",
@@ -341,7 +367,8 @@
       "date_label": "Phase 1/2, no data yet",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "PharmaResearch Co.,Ltd",
@@ -353,7 +380,8 @@
       "date_label": "Marketed product, no pipeline news",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Sclnow Biotechnology Co., Ltd.",
@@ -365,7 +393,8 @@
       "date_label": "Phase 1-3 (unnamed), ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "TricelX Inc.",
@@ -377,7 +406,8 @@
       "date_label": "Phase 1/2, IND cleared 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "4Moving Biotech",
@@ -389,7 +419,8 @@
       "date_label": "Phase 2a, Fast Track granted 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "ArthroBiologix Inc.",
@@ -401,7 +432,8 @@
       "date_label": "NA phase, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "CarthroniX, Inc.",
@@ -413,7 +445,8 @@
       "date_label": "Phase 1/2, planned start 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Fujian Shengdi Pharmaceutical Co., Ltd.",
@@ -425,7 +458,8 @@
       "date_label": "Phase 3, ongoing (parent program has momentum in obesity)",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Immunis, Inc.",
@@ -437,7 +471,8 @@
       "date_label": "Phase 1/2a complete, Phase 2b planned",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Magellan Stem Cells",
@@ -449,7 +484,8 @@
       "date_label": "Phase 3, planned late 2025",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Nuwacell Biotechnologies Co., Ltd.",
@@ -461,7 +497,8 @@
       "date_label": "Phase 1/2, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "R3 Medical Research",
@@ -473,7 +510,8 @@
       "date_label": "Early Phase 1, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Shandong Suncadia Medicine Co., Ltd.",
@@ -485,7 +523,8 @@
       "date_label": "Phase 1, recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "UnicoCell Biomed CO. LTD",
@@ -497,7 +536,8 @@
       "date_label": "Phase 3, enrollment complete Nov 2025",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Addpharma Inc.",
@@ -509,7 +549,8 @@
       "date_label": "Phase 2, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Avidence Therapeutics",
@@ -521,7 +562,8 @@
       "date_label": "Phase 1, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "CellSeed Inc.",
@@ -533,7 +575,8 @@
       "date_label": "Phase 3, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Glaceum",
@@ -545,7 +588,8 @@
       "date_label": "Phase 2, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Jiangsu Aosaikang Pharmaceutical Co., Ltd.",
@@ -557,7 +601,8 @@
       "date_label": "Phase 1/2, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Mather's Pharm. Co., Ltd.",
@@ -569,7 +614,8 @@
       "date_label": "Phase 4, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "OrthoTrophix, Inc",
@@ -581,7 +627,8 @@
       "date_label": "Phase 2b, enrollment complete",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "RegenLab France SAS",
@@ -593,7 +640,8 @@
       "date_label": "NA phase, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Shanghai AbelZeta Ltd.",
@@ -605,7 +653,8 @@
       "date_label": "Phase 3, enrollment complete",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "VivaTech International, Inc.",
@@ -617,7 +666,8 @@
       "date_label": "Phase 2, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Ageless Biotech, Inc.",
@@ -629,7 +679,8 @@
       "date_label": "Phase 2, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Belief BioMed (Beijing) Co., Ltd",
@@ -641,7 +692,8 @@
       "date_label": "Phase 1/2, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Doron Therapeutics Inc.",
@@ -653,7 +705,8 @@
       "date_label": "Phase 3, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Hangzhou Sciwind Biosciences Co., Ltd.",
@@ -665,7 +718,8 @@
       "date_label": "No OA data found",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "KeyBioscience AG",
@@ -677,7 +731,8 @@
       "date_label": "Phase 2, recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Medipost Co Ltd.",
@@ -689,7 +744,8 @@
       "date_label": "Phase 3, positive Japan data",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Paradigm Biopharmaceuticals Ltd.",
@@ -701,7 +757,8 @@
       "date_label": "Phase 2/3, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Saol Therapeutics Inc",
@@ -713,7 +770,8 @@
       "date_label": "Phase 2, done enrolling",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "TBF Genie Tissulaire",
@@ -725,7 +783,8 @@
       "date_label": "Phase 2, recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "ZetrOZ, Inc.",
@@ -737,7 +796,8 @@
       "date_label": "Phase 1/2, ongoing",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Akan Biosciences, LLC",
@@ -749,7 +809,8 @@
       "date_label": "Phase 1/2, not yet recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Bioventus LLC",
@@ -761,7 +822,8 @@
       "date_label": "Phase 3, recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "DuoGenic StemCells Corporation (DGSC)",
@@ -773,7 +835,8 @@
       "date_label": "Trial registered, not yet recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Healeon Medical Inc",
@@ -785,7 +848,8 @@
       "date_label": "NA phase, recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "LG Chem",
@@ -797,7 +861,8 @@
       "date_label": "Marketed product, NA phase",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Nature Cell Co. Ltd.",
@@ -809,7 +874,8 @@
       "date_label": "Phase 2b/3a, ongoing since 2008",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Peptinov SAS",
@@ -821,7 +887,8 @@
       "date_label": "Phase 2, not yet recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "Scarcell Therapeutics S.A.S.",
@@ -833,7 +900,8 @@
       "date_label": "Phase 1, recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     },
     {
       "name": "TRB Chemedica",
@@ -845,7 +913,8 @@
       "date_label": "Phase 3, recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true
+      "new": true,
+      "tier": "extended"
     }
   ],
   "new_candidates": []

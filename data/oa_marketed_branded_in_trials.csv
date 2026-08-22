@@ -1,4 +1,4 @@
 asset_name,name_variants_merged,sponsor(s),trial_count,phases_seen,statuses_seen,earliest_trial_start,most_recent_update,nct_ids
 Zilretta,ZILRETTA,"Pacira Pharmaceuticals, Inc; Sorrento Therapeutics, Inc.",3,PHASE2; PHASE3,ACTIVE_NOT_RECRUITING; TERMINATED; UNKNOWN,2021-11-15,2026-05-29,NCT06269705; NCT06977568; NCT04885972
-Celebrex,Celebrex capsule; celebrex,"Green Cross Corporation; PMG Pharm Co., Ltd; POZEN; Pfizer; SK Chemicals Co., Ltd.",6,PHASE3,COMPLETED,2002-11,2023-07-06,NCT01576419; NCT01535417; NCT00665431; NCT00137410; NCT00664560; NCT05930080
+celebrex,Celebrex; Celebrex capsule,"Green Cross Corporation; PMG Pharm Co., Ltd; POZEN; Pfizer; SK Chemicals Co., Ltd.",6,PHASE3,COMPLETED,2002-11,2023-07-06,NCT01576419; NCT01535417; NCT00665431; NCT00137410; NCT00664560; NCT05930080
 PENNSAID Gel,,Mallinckrodt,1,PHASE2,COMPLETED,2010-08-02,2019-10-22,NCT01119898

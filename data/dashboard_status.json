@@ -1,5 +1,5 @@
 {
-  "last_refreshed": "2026-08-22",
+  "last_refreshed": "2026-09-07",
   "status_labels": {
     "failed": "Discontinued / Failed",
     "pending": "Active — Data Pending",
@@ -917,5 +917,24 @@
       "tier": "extended"
     }
   ],
-  "new_candidates": []
+  "new_candidates": [
+    {
+      "name": "Organogenesis Holdings",
+      "asset": "ReNu (cryopreserved amniotic suspension allograft)",
+      "note": "FDA accepted the BLA for ReNu for symptomatic knee OA pain in July 2026, with a PDUFA date of April 24, 2027 — an allograft biologic nearing a real regulatory decision, not just an early-stage program.",
+      "found_date": "2026-09-07"
+    },
+    {
+      "name": "Sanofi",
+      "asset": "SAR446959",
+      "note": "A first-in-human Phase 1 intra-articular knee OA trial (NCT06704932) completed December 2025; a major pharma OA entrant not currently on this board at all.",
+      "found_date": "2026-09-07"
+    },
+    {
+      "name": "Synartro",
+      "asset": "SYN321 (diclofenac-hyaluronan conjugate)",
+      "note": "Swedish biotech reported positive Phase I/IIa data for its slow-release intra-articular diclofenac candidate in knee OA (May 2026) — borderline scope call since it pairs a drug (diclofenac) with a hyaluronan carrier rather than being a pure viscosupplement device.",
+      "found_date": "2026-09-07"
+    }
+  ]
 }

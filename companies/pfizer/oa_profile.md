@@ -322,6 +322,9 @@ selected as most directly relevant. Full search: 119 total results for
 - [pharmaceutical-technology.com, "FDA panel votes against Pfizer's tanezumab for osteoarthritis pain"](https://www.pharmaceutical-technology.com/news/fda-pfizer-tanezumab-safety/)
 - [FDA briefing document, docket FDA-2021-N-0134](https://www.fda.gov/media/146862/download)
 - [BioSpace, "Eli Lilly and Pfizer Put Once-Promising Osteoarthritis Pain Drug Tanezumab Out of its Misery"](https://www.biospace.com/eli-lilly-and-pfizer-put-once-promising-osteoarthritis-pain-drug-out-of-its-misery) — 2021-10-27
+- [Pfizer press release, "Robust Phase 2b Efficacy and Favorable Tolerability Support Monthly Dosing for Pfizer's GLP-1 RA Berobenatide"](https://www.pfizer.com/news/press-release/press-release-detail/robust-phase-2b-efficacy-and-favorable-tolerability-support) — 2026-06-05
+- [BusinessWire, same berobenatide Phase 2b release](https://www.businesswire.com/news/home/20260605120877/en/Robust-Phase-2b-Efficacy-and-Favorable-Tolerability-Support-Monthly-Dosing-for-Pfizers-GLP-1-RA-Berobenatide) — 2026-06-05
+- [Pfizer, "Pfizer Pipeline | Key Anticipated 2026 Catalysts"](https://www.pfizer.com/pfizer-pipeline-key-anticipated-2026-catalysts)
 
 **PubMed / NCBI E-utilities:**
 - Search: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=tanezumab+AND+osteoarthritis&retmax=15&sort=date&retmode=json` — accessed 2026-08-21, 119 total results
@@ -334,3 +337,34 @@ selected as most directly relevant. Full search: 119 total results for
 `User-Agent` header per SEC's fair-access policy, then full-text-searched
 locally for "tanezumab" and "osteoarthritis" to avoid missing mentions
 buried in large (5-7 MB) 10-K documents.
+
+---
+
+## Recent Updates (2026-09-21)
+
+- **2026-06-05** — Pfizer reported positive Phase 2b (VESPER-1) results for
+  **berobenatide** (also seen as PF-08653944 / MET-097i), an ultra-long-acting,
+  monthly-dosed GLP-1 receptor agonist peptide Pfizer obtained via its
+  ~$10B acquisition of Metsera (completed 2025-11-13). Berobenatide is
+  **unrelated to tanezumab or the anti-NGF mechanism** — it is a
+  weight-management asset. Multiple sources (Pfizer's own release, BusinessWire,
+  BioSpace, Drugs.com) consistently describe Pfizer's Phase 3 "VESPER" program
+  (10 planned/ongoing trials) as including studies of berobenatide in
+  **obesity-related comorbidities, including knee osteoarthritis**, alongside
+  obstructive sleep apnea — the same "GLP-1-for-knee-OA-via-weight-loss" angle
+  already validated for Novo Nordisk's semaglutide (STEP 9; see the Merck/MSD
+  profile's literature section). Pfizer's own "Key Anticipated 2026 Catalysts"
+  page also lists a berobenatide knee-OA-related milestone for 2026. This
+  appears to be the **first OA-relevant Pfizer pipeline activity since
+  tanezumab's October 2021 discontinuation**, though it is an indirect,
+  comorbidity-outcome indication (weight loss reducing joint-load/pain) rather
+  than a direct OA disease-modifying or analgesic drug, and no specific NCT
+  number isolating a knee-OA cohort/endpoint was identified in this pass —
+  flagged for follow-up confirmation. ([Pfizer press release,
+  2026-06-05](https://www.pfizer.com/news/press-release/press-release-detail/robust-phase-2b-efficacy-and-favorable-tolerability-support);
+  [BusinessWire, 2026-06-05](https://www.businesswire.com/news/home/20260605120877/en/Robust-Phase-2b-Efficacy-and-Favorable-Tolerability-Support-Monthly-Dosing-for-Pfizers-GLP-1-RA-Berobenatide);
+  [Pfizer, Key Anticipated 2026 Catalysts](https://www.pfizer.com/pfizer-pipeline-key-anticipated-2026-catalysts))
+- Tanezumab itself remains discontinued with no revival, resubmission, or
+  out-licensing found; targeted searches on 2026-09-21 turned up no new
+  tanezumab-specific news beyond the retrospective/methodological publications
+  already noted above.

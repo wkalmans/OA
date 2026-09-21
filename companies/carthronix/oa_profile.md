@@ -6,6 +6,9 @@
 ## Current Status
 CarthroniX is a small USC-spinout biotech. CX-011 curbed joint inflammation and OA symptoms in preclinical rat and dog studies (published in Science Translational Medicine), and the company closed a $2.25M convertible note financing round in 2022 to fund clinical development. A Phase 1/2a trial (NCT07308834) for knee OA pain is planned with an estimated start of February 2026 and primary completion in October 2028 — i.e., still pre-clinical-stage in humans as of this writing.
 
+## Recent Updates (2026-09-21)
+- The Phase 1/2a trial of intra-articular CX-011 for knee OA pain (NCT07308834), previously listed as planned to start in early 2026, has now begun (start reported as August 2026), with estimated primary completion December 2028. No efficacy or safety readouts yet. https://clinicaltrials.gov/study/NCT07308834
+
 ## Sources
 - https://ryortho.com/2022/04/2-25m-invested-in-novel-small-molecule-cartilage-treatment/
 - https://www.drugdiscoverytrends.com/qa-usc-researchers-uncover-potential-osteoarthritis-treatment-breakthrough-with-r805-cx-011/

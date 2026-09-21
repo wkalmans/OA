@@ -50,6 +50,10 @@ GSK does **not currently have an active osteoarthritis drug program**. Its most 
 - Kannan P, et al. "Unravelling the Relacatib activity against the CTSK proteins causing pycnodysostosis: a molecular docking and dynamics approach." *J Biomol Struct Dyn.* 2024 May;42(8):4121-4132. PMID: [37255004](https://pubmed.ncbi.nlm.nih.gov/37255004/) (computational/structural study, not a clinical OA trial, but relevant to relacatib's target)
 - No PubMed-indexed clinical article specific to GW842166 in osteoarthritis was found (searched "GW842166 AND osteoarthritis" — zero PubMed results); available detail comes from trial registries and secondary sources only.
 
+## Recent Updates (2026-09-21)
+
+- **New early-stage OA target-discovery collaboration (not a revival of GSK3858279, but new company activity in OA).** In December 2024, GSK entered two multi-program strategic collaborations with UK AI biotech Relation Therapeutics to identify and validate novel drug targets in fibrotic diseases and osteoarthritis — GSK paid $45M upfront (including a $15M equity stake), with up to $63M in near-term collaboration payments and up to $200M in milestones per target, and GSK holds worldwide development/commercialization rights to any resulting targets. On 2026-07-30, the companies expanded the alliance with an additional deal worth up to $110M, using Relation's "Lab-in-the-Loop"/MORGAN AI platform (genomic/transcriptomic data from human tissue plus gene-knockout screens) to find new OA and fibrosis targets. This is discovery-stage work only — no clinical candidate has emerged — so it does not change GSK3858279's terminated status, but it is a notable signal of renewed GSK interest in OA drug discovery to watch in future passes. [FierceBiotech](https://www.fiercebiotech.com/biotech/gsk-pens-45m-upfront-collab-ai-biotech-identify-fibrotic-osteoarthritis-targets); [GlobeNewswire, Dec 2024 announcement](https://www.globenewswire.com/news-release/2024/12/10/2994205/0/en/Relation-announces-two-strategic-collaborations-with-GSK-to-advance-therapeutics-for-fibrotic-diseases-and-osteoarthritis.html); [Bloomberg, Jul 2026 expansion](https://www.bloomberg.com/news/articles/2026-07-30/gsk-strikes-ai-deal-with-uk-biotech-to-boost-early-pipeline)
+
 ## Sources
 
 - https://www.gsk.com/en-gb/research-and-development/our-pipeline/
@@ -68,3 +72,6 @@ GSK does **not currently have an active osteoarthritis drug program**. Its most 
 - https://pubmed.ncbi.nlm.nih.gov/39419538/
 - https://pubmed.ncbi.nlm.nih.gov/38273625/
 - https://pubmed.ncbi.nlm.nih.gov/37255004/
+- https://www.fiercebiotech.com/biotech/gsk-pens-45m-upfront-collab-ai-biotech-identify-fibrotic-osteoarthritis-targets
+- https://www.globenewswire.com/news-release/2024/12/10/2994205/0/en/Relation-announces-two-strategic-collaborations-with-GSK-to-advance-therapeutics-for-fibrotic-diseases-and-osteoarthritis.html
+- https://www.bloomberg.com/news/articles/2026-07-30/gsk-strikes-ai-deal-with-uk-biotech-to-boost-early-pipeline

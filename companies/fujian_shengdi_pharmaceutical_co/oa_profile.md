@@ -6,6 +6,10 @@
 ## Current Status
 Fujian Shengdi is a subsidiary of Jiangsu Hengrui Pharmaceuticals (Hengrui Medicine), one of China's largest drugmakers, and co-develops ribupatide with U.S. partner Kailera Therapeutics. Ribupatide (as HRS9531) is well-advanced and heavily publicized for obesity/weight-loss indications — positive Phase 2 topline data and progression into the global Phase 3 KaiNETIC program were reported in 2026 — but no public disclosure connecting ribupatide specifically to an osteoarthritis indication or trial was found beyond the ClinicalTrials.gov listing itself; it is plausible this OA trial leverages the same molecule for a weight-related knee OA benefit, consistent with sector-wide GLP-1-for-OA interest.
 
+## Recent Updates (2026-09-21)
+- A specific OA-focused Phase 3 trial has now been registered: NCT07709910, a multicenter, randomized, double-blind, placebo-controlled study of ribupatide injection in participants with obesity and knee osteoarthritis, evaluating whether it can improve knee joint structure. Estimated start July 2026, primary completion November 2028. This is the first concrete confirmation of a knee-OA-specific ribupatide trial (previously only inferred from the obesity program). https://clinicaltrials.gov/study/NCT07709910
+
 ## Sources
 - https://www.biospace.com/press-releases/kailera-therapeutics-and-hengrui-pharma-report-positive-topline-data-from-phase-2-obesity-trial-of-oral-ribupatide
 - https://www.biospace.com/drug-development/kailera-hengrui-push-oral-glp-1-gip-pill-to-phase-3-after-clearing-mid-stage-china-study
+- https://clinicaltrials.gov/study/NCT07709910

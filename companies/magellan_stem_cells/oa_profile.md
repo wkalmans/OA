@@ -6,7 +6,11 @@
 ## Current Status
 Magellan Stem Cells is an Australian company. Its Phase I/IIa trial (40 patients, dose cohorts 10–100 million cells vs. placebo, 12-month follow-up) demonstrated safety and signals of therapeutic benefit for knee OA, published in a peer-reviewed journal. Building on those results, a large Phase III trial (~573 participants, placebo vs. 20M-cell vs. 100M-cell doses, ~48-month study duration) is planned to start in late 2025 — a substantial commitment for a company this size and a credible next step toward a differentiated off-the-shelf cell therapy.
 
+## Recent Updates (2026-09-21)
+- As of September 2026 the Phase 3 trial (NCT07106229) has not yet been confirmed as started; coverage now describes it as "expected to commence later in 2026" (slipping from the earlier late-2025 target). Separately, Magellan secured a A$7 million grant from Australia's Medical Research Future Fund (MRFF Stem Cell Therapies Research Grant Opportunity) to help fund the Phase 3 trial. https://biotechdispatch.com.au/news/magellan-stem-cells-welcomes-7-million-federal-government-grant
+
 ## Sources
 - https://pubmed.ncbi.nlm.nih.gov/39161739/
 - https://www.magellanstemcells.com.au/research/
 - https://ichgcp.net/clinical-trials-registry/NCT07106229
+- https://biotechdispatch.com.au/news/magellan-stem-cells-welcomes-7-million-federal-government-grant

@@ -38,6 +38,10 @@ Grünenthal is also the **originator of tapentadol** (Palexia/Nucynta depending 
 - Mobasheri A, et al. "Targeting the TRPV1 pain pathway in osteoarthritis of the knee." *Expert Opinion on Therapeutic Targets*, Oct 2024. PMID: [39450875](https://pubmed.ncbi.nlm.nih.gov/39450875/)
 - ACR Meeting Abstract: "An Evaluation of the Efficacy, Pharmacokinetics and Safety of RTX-GRT7039 — a Placebo-controlled Study in Patients with Osteoarthritis Knee Pain." [ACR Abstracts](https://acrabstracts.org/abstract/an-evaluation-of-the-efficacy-pharmacokinetics-and-safety-of-the-transient-receptor-potential-vanilloid-1-trpv1-agonist-rtx-grt7039-a-placebo-controlled-study-in-patients-with-osteoarthr/) — earlier-stage (Phase 2) data, positive.
 
+## Recent Updates (2026-09-21)
+
+- **Company itself now confirms the Phase 3 miss, resolving the prior open question.** Grünenthal's own clinical-trial-portal lay summary for trial KF7039-02 (the single-injection Phase 3 RTX-GRT7039 study, corresponding to NCT05449132) states plainly that the treatment "did not meet its main goal of showing better pain relief than placebo" — both arms showed substantial pain-score reduction at Week 12, but the between-group difference was small and not statistically significant, though the drug was safe and well tolerated. This is the first Grünenthal-authored document we have found that explicitly confirms the Phase 3 primary-endpoint miss; our Aug 2026 pull could only infer this from trial completion dates, posted numeric results, and a third-party literature review. A companion open-label safety lay summary (KF7039-03) is also posted on Grünenthal's site. No new OA asset, licensing deal, or pipeline revival was found for Grünenthal in this pass — RTX-GRT7039 remains off the company's public pipeline page. [Grünenthal KF7039-02 results lay summary (PDF)](https://www.grunenthal.com/-/media/projects/corporatewebsite/com/pdf/clinicaltrialportal/lay-summaries/kf7039-02-results-lay-summary.pdf)
+
 ## Sources
 
 - https://clinicaltrials.gov/study/NCT05248386
@@ -55,3 +59,5 @@ Grünenthal is also the **originator of tapentadol** (Palexia/Nucynta depending 
 - https://pharmaphorum.com/news/grunenthal-takes-non-opioid-pain-drug-resiniferatoxin-into-phase-3
 - https://en.wikipedia.org/wiki/Tapentadol
 - https://acrabstracts.org/abstract/an-evaluation-of-the-efficacy-pharmacokinetics-and-safety-of-the-transient-receptor-potential-vanilloid-1-trpv1-agonist-rtx-grt7039-a-placebo-controlled-study-in-patients-with-osteoarthr/
+- https://www.grunenthal.com/-/media/projects/corporatewebsite/com/pdf/clinicaltrialportal/lay-summaries/kf7039-02-results-lay-summary.pdf
+- https://www.grunenthalhealth.com/-/media/projects/corporatewebsite/com/pdf/clinicaltrialportal/lay-summaries/kf7039-03_results-lay-summary.pdf

@@ -6,5 +6,9 @@
 ## Current Status
 PharmaResearch, based in Gangneung, South Korea, markets the Hyruan family of hyaluronic acid viscosupplements: Hyruan Plus (high molecular weight HA, ~3000 kDa, multi-injection) and Hyruan ONE (single-shot, BDDE-crosslinked sodium hyaluronate, 60mg/3mL). These are established, already-marketed products rather than pipeline candidates — clinical literature indicates Hyruan ONE's single-injection efficacy is comparable to Hyruan Plus's three-injection regimen. This is a commercial/legacy product line rather than an active development program; no new trial results or corporate news were found.
 
+## Recent Updates (2026-09-21)
+- A new clinical trial (NCT07646483) has appeared on ClinicalTrials.gov: "Clinical Trial to Evaluate the Efficacy and Safety of Conjuran® After First and Second Cycle (Repeat) Administration in Patients With Knee Osteoarthritis," sponsored by PharmaResearch and using the company's own Hyruan as a comparator. This is PharmaResearch's first identified active OA pipeline program beyond the marketed Hyruan hyaluronic-acid line (Conjuran is a polynucleotide-based injectable) (https://clinicaltrials.gov/study/NCT07646483).
+
 ## Sources
 - https://www.ciplamed.com/explore/resources/hyruan-hyaluronic-acid-monograph
+- https://clinicaltrials.gov/study/NCT07646483

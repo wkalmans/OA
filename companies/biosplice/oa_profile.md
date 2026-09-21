@@ -92,6 +92,12 @@ Full esearch/esummary queries used:
 
 ---
 
+## Recent Updates (2026-09-21)
+
+- **2026-09-08** — UK's MHRA accepted Biosplice's marketing authorization application for lorecivivint (LOR) in knee osteoarthritis as "complete and valid," starting the formal UK review timetable; Biosplice also stated it intends to submit a corresponding application to the European Medicines Agency (EMA) later in September 2026. No FDA-specific action (acceptance for filing, PDUFA date, advisory committee, etc.) on the January 2026 NDA was found in this pass — the FDA review status remains as reported in the Aug 2026 profile version. [GlobeNewswire, 2026-09-08](https://www.globenewswire.com/news-release/2026/09/08/3357452/0/en/uk-s-mhra-accepts-biosplice-s-application-for-lorecivivint-lor-in-knee-osteoarthritis-and-begins-assessment.html)
+
+---
+
 ## Sources
 
 **Company press releases / company site:**
@@ -111,6 +117,8 @@ Full esearch/esummary queries used:
 - https://finance.yahoo.com/news/biosplice-announces-upcoming-presentation-successful-100000257.html/ (mirror)
 - https://www.globenewswire.com/news-release/2026/01/06/3213418/0/en/Biosplice-Announces-the-Submission-of-its-New-Drug-Application-NDA-to-the-FDA-for-Lorecivivint-LOR-to-Treat-Knee-Osteoarthritis.html
 - https://www.biospace.com/press-releases/biosplice-announces-the-submission-of-its-new-drug-application-nda-to-the-fda-for-lorecivivint-lor-to-treat-knee-osteoarthritis (mirror)
+- https://www.globenewswire.com/news-release/2026/09/08/3357452/0/en/uk-s-mhra-accepts-biosplice-s-application-for-lorecivivint-lor-in-knee-osteoarthritis-and-begins-assessment.html
+- https://www.biospace.com/press-releases/uks-mhra-accepts-biosplices-application-for-lorecivivint-lor-in-knee-osteoarthritis-and-begins-assessment (mirror)
 
 **News coverage:**
 - https://endpoints.news/osman-kibar-lays-down-his-hand-at-samumed-stepping-away-from-ceo-role-as-his-once-heralded-anti-aging-biotech-rebrands/

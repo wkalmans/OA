@@ -1,5 +1,5 @@
 {
-  "last_refreshed": "2026-09-14",
+  "last_refreshed": "2026-09-21",
   "status_labels": {
     "failed": "Discontinued / Failed",
     "pending": "Active — Data Pending",
@@ -64,11 +64,11 @@
       "status": "failed",
       "asset": "RTX-GRT7039",
       "mechanism": "Resiniferatoxin (TRPV1 agonist)",
-      "finding": "A 3-trial global Phase 3 program completed by mid-2025. Posted results show only a marginal pain gap over placebo, and the asset has since <b>quietly disappeared from Grünenthal's own pipeline page</b> despite 2023 guidance of a 2025 filing. Inferred discontinued — no company confirmation found.",
-      "date_label": "Inferred discontinued, 2025",
+      "finding": "Grünenthal's own clinical-trial-portal lay summary for trial KF7039-02 (the single-injection Phase 3 RTX-GRT7039 study) now explicitly states the trial did not meet its primary endpoint vs. placebo — confirming what had previously only been inferred, never company-confirmed.",
+      "date_label": "Phase 3 miss confirmed by company lay summary (2025)",
       "deep_dive": false,
       "also_note": "Also markets: Tapentadol (originator)",
-      "new": false,
+      "new": true,
       "tier": "core"
     },
     {
@@ -77,11 +77,11 @@
       "status": "failed",
       "asset": "GSK3858279",
       "mechanism": "Anti-CCL17 antibody",
-      "finding": "Phase 2 trial &ldquo;MARS-17&rdquo; was <b>terminated for futility in late 2024</b>. A second candidate, otilimab (anti-GM-CSF), had only marginal hand-OA data and died with its broader rheumatoid arthritis program in Oct 2022. No active OA pipeline remains.",
-      "date_label": "Terminated, late 2024",
+      "finding": "GSK3858279 itself remains terminated, but GSK entered a new early-stage OA target-discovery collaboration with AI biotech Relation Therapeutics (Dec 2024, $45M upfront; expanded Jul 30, 2026 with a further deal worth up to $110M) covering fibrotic disease and osteoarthritis target identification — a discovery-stage signal of renewed interest, not yet a clinical asset.",
+      "date_label": "Terminated, late 2024 (new OA discovery deal w/ Relation Tx, expanded Jul 2026)",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "core"
     },
     {
@@ -139,14 +139,14 @@
     {
       "name": "Pfizer",
       "slug": "pfizer",
-      "status": "failed",
+      "status": "pending",
       "asset": "Tanezumab (PF-04383119)",
       "mechanism": "Anti-NGF antibody",
-      "finding": "Phase 3 efficacy was real, but joint-safety signals (rapidly progressive OA) drove a 19&ndash;1 FDA Advisory Committee vote against approval. Pfizer and Lilly discontinued the global program in <b>October 2021</b>. Tanezumab hasn't appeared in Pfizer's 10-K pipeline text in any year since.",
-      "date_label": "Discontinued Oct 2021",
+      "finding": "Tanezumab remains dead, but Pfizer's newly acquired (ex-Metsera) GLP-1 drug berobenatide is now in a 10-trial Phase 3 program that includes studying knee osteoarthritis as an obesity comorbidity outcome — Pfizer's first OA-relevant pipeline activity since 2021, though indirect (weight-loss effect, not a direct OA drug).",
+      "date_label": "Berobenatide Phase 2b positive, Jun 2026",
       "deep_dive": true,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "core"
     },
     {
@@ -181,11 +181,11 @@
       "status": "pending",
       "asset": "Lorecivivint (SM04690)",
       "mechanism": "Wnt-pathway inhibitor (intra-articular)",
-      "finding": "All three pivotal Phase 3 trials <b>missed their primary endpoint</b> in the full patient population (2022, 2024). Biosplice filed an NDA anyway in <b>January 2026</b>, leaning on a long-term extension trial and post-hoc subgroup data — with no Fast Track or Breakthrough designation found. The most consequential open question on this board.",
-      "date_label": "NDA filed despite misses, Jan 2026",
+      "finding": "UK's MHRA accepted Biosplice's lorecivivint marketing application as complete/valid on Sept 8, 2026, starting formal UK review; Biosplice also plans to file with the EMA later in Sept 2026. No FDA action on the Jan 2026 U.S. NDA has been reported yet.",
+      "date_label": "NDA filed (US); UK MHRA accepted app, Sep 2026",
       "deep_dive": true,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "core"
     },
     {
@@ -324,11 +324,11 @@
       "status": "momentum",
       "asset": "Allocetra",
       "mechanism": "Immunomodulatory macrophage reprogramming therapy",
-      "finding": "Phase I/II data in knee OA showed <b>durable pain reduction and function improvement at 6 months versus placebo</b>, including reported avoidance of knee replacement in some patients; presented at OARSI 2025 and EULAR 2025.",
-      "date_label": "Phase I/II, positive 6-month data",
+      "finding": "FDA cleared Enlivex's IND for a global <b>Phase 2b</b> trial of Allocetra in knee OA (based on durable 6-month Phase I/II benefit); trial has since advanced with Danish Medicines Agency approval and first-patient dosing in the U.S. arm, plus new Phase IIa data presented at OARSI 2026.",
+      "date_label": "Phase 2b, IND cleared & first patient dosed 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -376,11 +376,11 @@
       "status": "pending",
       "asset": "Hyruan (Plus / ONE)",
       "mechanism": "Intra-articular hyaluronic acid viscosupplementation",
-      "finding": "Hyruan is an <b>already-marketed, established HA product line</b> (not an active pipeline candidate); Hyruan ONE's single-shot regimen has shown efficacy comparable to Hyruan Plus's three-shot regimen. No new trial activity found.",
-      "date_label": "Marketed product, no pipeline news",
+      "finding": "A previously undetected new pipeline trial (NCT07646483) surfaced: PharmaResearch is testing Conjuran® (a polynucleotide injectable), with its own Hyruan as comparator, in knee OA — the company's first identified active OA pipeline program beyond the marketed Hyruan HA line.",
+      "date_label": "New pipeline trial (Conjuran®) surfaced 2026, no data yet",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -441,11 +441,11 @@
       "status": "pending",
       "asset": "CX-011 (R805)",
       "mechanism": "Small-molecule gp130/IL-6 pathway modulator, intra-articular",
-      "finding": "Preclinical data in rats and dogs (published in Science Translational Medicine) supported a 2022 $2.25M financing round; <b>Phase 1/2a human trial not slated to start until 2026</b>.",
-      "date_label": "Phase 1/2, planned start 2026",
+      "finding": "Phase 1/2a trial of CX-011 (NCT07308834), previously only “planned” for early 2026, has now actually started (reported start Aug 2026); no efficacy data yet.",
+      "date_label": "Phase 1/2, started August 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -454,11 +454,11 @@
       "status": "pending",
       "asset": "Ribupatide Injection",
       "mechanism": "Dual GLP-1/GIP receptor agonist; OA benefit likely indirect via weight loss",
-      "finding": "Hengrui/Kailera's ribupatide has strong momentum in obesity (positive Phase 2, now Phase 3 KaiNETIC), but <b>no public disclosure ties it specifically to the OA trial</b> beyond the registration itself.",
-      "date_label": "Phase 3, ongoing (parent program has momentum in obesity)",
+      "finding": "A concrete knee-OA-specific Phase 3 trial (NCT07709910) has now been registered — testing ribupatide injection in obesity + knee OA patients — confirming direct OA development beyond the obesity program (est. start July 2026).",
+      "date_label": "Phase 3, NCT07709910 registered, est. start July 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -477,14 +477,14 @@
     {
       "name": "Magellan Stem Cells",
       "slug": "magellan_stem_cells",
-      "status": "momentum",
+      "status": "pending",
       "asset": "MAG200",
       "mechanism": "Off-the-shelf allogeneic adipose-derived mesenchymal stem cells, intra-articular",
-      "finding": "Phase I/IIa (40 patients) showed safety and efficacy signals; company is moving to a <b>573-patient Phase III trial planned for late 2025</b>, a big step for a company this size.",
-      "date_label": "Phase 3, planned late 2025",
+      "finding": "The Phase 3 trial (NCT07106229) has <b>not</b> started as of Sept 2026 — now described as expected “later in 2026,” slipping from the earlier late-2025 target. Magellan did secure a A$7M Australian government MRFF grant to help fund the trial.",
+      "date_label": "Phase 3, delayed to later 2026 (not yet started)",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -532,11 +532,11 @@
       "status": "momentum",
       "asset": "ELIXCYTE",
       "mechanism": "Allogeneic adipose-derived mesenchymal stem cells, intra-articular",
-      "finding": "Phase III trial <b>completed patient enrollment in November 2025</b> with both TFDA and FDA approvals in hand; earlier data showed faster pain/function improvement than hyaluronic acid.",
-      "date_label": "Phase 3, enrollment complete Nov 2025",
+      "finding": "Still no Phase 3 (ELIXCYTE) readout — trial remains in its 1-year post-enrollment follow-up (unblinding pending). A new mechanistic paper (with Linkou Chang Gung Memorial Hospital, published Dec 2025) shows a single ELIXCYTE-OA dose reduced inflammation and cartilage degeneration while preserving cartilage structure.",
+      "date_label": "Phase 3, enrollment complete Nov 2025; readout pending",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -558,11 +558,11 @@
       "status": "pending",
       "asset": "AVD275 Intra-articular Injection",
       "mechanism": "Disease-modifying candidate from a \"cartilage regeneration platform,\" specific target undisclosed",
-      "finding": "Small NY biotech (founded 2018) with a broader regenerative-pathway platform; <b>AVD275 is Phase 1, no results or partnerships found</b> beyond investor-database listings.",
-      "date_label": "Phase 1, ongoing",
+      "finding": "Phase 1 SAD trial of intra-articular AVD275 (NCT07338266) began Jan 22, 2026, enrolling ~15 knee OA patients in Australia with 24-week follow-up.",
+      "date_label": "Phase 1, dosing underway (started Jan 2026)",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -597,11 +597,11 @@
       "status": "pending",
       "asset": "ASKC200 topical liniment",
       "mechanism": "Topical analgesic, specific target undisclosed",
-      "finding": "Established Chinese pharma running a Phase 1/2 dose-finding trial; <b>NMPA accepted the clinical trial application in 2023, no efficacy data yet</b>.",
-      "date_label": "Phase 1/2, ongoing",
+      "finding": "Original Phase 1/2 ASKC200 trial (NCT06614608) is now Active-Not-Recruiting with primary completion reached Apr 28, 2026; a second, separate ASKC200 efficacy trial (NCT07742852) has also been registered, indicating program progression beyond dose-finding.",
+      "date_label": "Phase 1/2 primary completion done; Phase 2 efficacy trial registered",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -711,14 +711,14 @@
     {
       "name": "Hangzhou Sciwind Biosciences Co., Ltd.",
       "slug": "hangzhou_sciwind_biosciences_co",
-      "status": "pending",
+      "status": "momentum",
       "asset": "Ecnoglutide Injection (XW003)",
       "mechanism": "Long-acting GLP-1 receptor agonist, weight-loss mediated joint-load reduction",
-      "finding": "Commercially approved in China for obesity/T2D; <b>no OA-specific trial data or disclosure found</b>, but mechanism parallels Lilly's tirzepatide and Novo Nordisk's semaglutide knee-OA programs already tracked.",
-      "date_label": "No OA data found",
+      "finding": "A dedicated Phase 3 knee-OA trial for ecnoglutide (NCT07734311) was found, resolving the prior “no OA data found” status — recruiting since Aug 2026, primary completion est. May 2028.",
+      "date_label": "Phase 3, recruiting (KOA)",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -753,24 +753,24 @@
       "status": "momentum",
       "asset": "Pentosan Polysulfate Sodium (PPS/Zilosul)",
       "mechanism": "Disease-modifying candidate, anti-inflammatory/cartilage-protective glycosaminoglycan",
-      "finding": "ASX-listed; <b>Phase IIb trial met secondary endpoints</b> with reduced bone marrow lesions and a disease-modification signal; new 2026 research partnership with City St George's, University of London.",
-      "date_label": "Phase 2/3, ongoing",
+      "finding": "Phase 3 (PARA_OA_012) enrollment completed with 538 patients across 65 sites (above the 466 target); DSMB interim review targeted Sept 2026, top-line primary endpoint results expected Q1 2027.",
+      "date_label": "Phase 3, enrollment complete, interim Sept 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
       "name": "Saol Therapeutics Inc",
       "slug": "saol_therapeutics",
-      "status": "pending",
+      "status": "momentum",
       "asset": "SL-1002",
       "mechanism": "Chemoneurolytic intra-articular injection (CYCLOPHLEX platform) for OA pain",
-      "finding": "Completed Phase II COMPASS enrollment; <b>positive End-of-Phase II FDA meeting (April 2025)</b> cleared a path to pivotal trial, but no efficacy data published yet.",
-      "date_label": "Phase 2, done enrolling",
+      "finding": "SL-1002 has moved from a planned Phase 3 into an actual pivotal trial (NCT07226258, 150-patient target) that started November 2025; no efficacy readout yet.",
+      "date_label": "Phase 3, started Nov 2025, enrolling",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -831,11 +831,11 @@
       "status": "pending",
       "asset": "Low-dose PCP-PBMCs injection",
       "mechanism": "Autologous peripheral blood mononuclear cell injection for knee OA",
-      "finding": "Phase 2/3 trial registered but <b>not yet recruiting</b>; no company website, press coverage, or additional disclosure found anywhere beyond the CT.gov listing.",
-      "date_label": "Trial registered, not yet recruiting",
+      "finding": "DuoGenic signed a non-exclusive licensing deal with Japan's A&I Corporation for its cell tech, including a 3-in-1 PBMC/PRF/growth-factor osteoarthritis solution, covering approval, marketing and sales in Japan.",
+      "date_label": "Licensed to Japan (A&I Corp), trial not yet recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -867,40 +867,40 @@
     {
       "name": "Nature Cell Co. Ltd.",
       "slug": "nature_cell_co",
-      "status": "pending",
+      "status": "momentum",
       "asset": "JointStem",
       "mechanism": "Autologous adipose-derived stem cell therapy for knee OA",
-      "finding": "Deepest trial history in this batch, spanning Phase 1/2 (2008) through a completed Phase 3 (2020) to an active Phase 2b/3a study running through 2027; company references a <b>January 2025 FDA IND approval</b> for US development, but Korean marketing-approval status remains unresolved despite years of trials.",
-      "date_label": "Phase 2b/3a, ongoing since 2008",
+      "finding": "JointStem became the first therapy from a Korean company to win FDA Breakthrough Therapy Designation; Nature Cell has a formal FDA meeting set for May 2026 on the accelerated-approval pathway, and is pursuing a Nasdaq ADR listing (application expected Sept-Nov 2026).",
+      "date_label": "FDA Breakthrough Therapy Designation; accelerated-approval meeting May 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
       "name": "Peptinov SAS",
       "slug": "peptinov",
-      "status": "pending",
+      "status": "momentum",
       "asset": "PPV-06",
       "mechanism": "Anti-IL-6 active immunotherapy (\"vaccine\") inducing patient antibodies against interleukin-6",
-      "finding": "Completed Phase 1 dose-escalation safety study; has since registered a <b>Phase 2 trial in inflammatory-phenotype knee OA</b> (not yet recruiting), using a distinctive vaccine-style mechanism. Company website unreachable; no other disclosure found.",
-      "date_label": "Phase 2, not yet recruiting",
+      "finding": "Peptinov published positive Phase 1 data for PPV-06 in Nature Communications (Dec 2025) — clean safety profile, no SAEs/DLTs — and is preparing a 2026 Phase 2 program enrolling 204 inflammatory knee OA patients across 7 European countries.",
+      "date_label": "Phase 1 published; Phase 2 (204 pts, 7 EU countries) planned 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
       "name": "Scarcell Therapeutics S.A.S.",
       "slug": "scarcell_therapeutics_s_a_s",
-      "status": "pending",
+      "status": "momentum",
       "asset": "aeGF (allogeneic engineered gingival fibroblasts)",
       "mechanism": "Allogeneic gingival fibroblast cell therapy, single knee injection, immune-tolerant (no immunosuppression needed)",
-      "finding": "First-in-human Phase 1 trial recruiting; backed by an <b>unusually strong preclinical package — 800+ companion animals (dogs, racehorses) with up to 2-year follow-up</b> and US patents on the cell product and process. No human data yet.",
-      "date_label": "Phase 1, recruiting",
+      "finding": "Scarcell dosed the world's first patients with its aeGF allogeneic gingival-fibroblast therapy in its Phase Ib knee OA trial (NCT06690710) at Oxford University Hospitals, UK, announced Dec 2025.",
+      "date_label": "Phase 1b, recruiting; first patients dosed Dec 2025",
       "deep_dive": false,
       "also_note": null,
-      "new": false,
+      "new": true,
       "tier": "extended"
     },
     {
@@ -935,6 +935,36 @@
       "asset": "SYN321 (diclofenac-hyaluronan conjugate)",
       "note": "Swedish biotech reported positive Phase I/IIa data for its slow-release intra-articular diclofenac candidate in knee OA (May 2026) — borderline scope call since it pairs a drug (diclofenac) with a hyaluronan carrier rather than being a pure viscosupplement device.",
       "found_date": "2026-09-07"
+    },
+    {
+      "name": "OliPass Corporation",
+      "asset": "OLP-1002 (Nav1.7-selective PNA antisense inhibitor)",
+      "note": "Phase 2a trial in moderate-to-severe OA pain (Australia) reported dosing complete with striking early efficacy — up to 50-70% WOMAC pain reduction and 60-80% VAS reduction at low dose over 4 weeks from a single subcutaneous injection.",
+      "found_date": "2026-09-21"
+    },
+    {
+      "name": "Kangstem Biotech",
+      "asset": "OSCA (osiramestrocel + cartilage acellular matrix)",
+      "note": "First-in-human Phase I trial of an intra-articular co-formulation of allogeneic umbilical-cord-blood MSCs and cartilage acellular matrix in knee OA, published 2026, showed no dose-limiting toxicities and MRI signs of possible cartilage repair.",
+      "found_date": "2026-09-21"
+    },
+    {
+      "name": "Applied Biologics",
+      "asset": "Disease-Modifying Osteoarthritis (DMOAD) gene therapy program (unnamed vector)",
+      "note": "Launched a new preclinical DMOAD gene therapy program in June 2026 (expanding beyond its chronic-wound business) and announced successful vector delivery/expression in chondrocytes as a key preclinical milestone in Sept 2026.",
+      "found_date": "2026-09-21"
+    },
+    {
+      "name": "Renovare Therapeutics, Inc.",
+      "asset": "Regenerative injection platform / biomaterial cartilage repair kit",
+      "note": "New biotech launched from stealth in April 2026 (CU Boulder/CU Anschutz/Colorado State spinout), backed by up to $33.5M in ARPA-H NITRO funding; animal data show joint self-repair within weeks, with human trials targeted by 2028.",
+      "found_date": "2026-09-21"
+    },
+    {
+      "name": "BioTissue, Inc.",
+      "asset": "BioDRestore (amniotic membrane / umbilical cord particulate allograft)",
+      "note": "Completed an 84-subject randomized trial vs. steroid injection for knee OA showing sustained improvement (Lysholm, KOOS, SANE) out to 12 months; consistently listed as an active OA-pipeline player in 2024-2026 competitive-landscape reports but not yet tracked here.",
+      "found_date": "2026-09-21"
     }
   ]
 }

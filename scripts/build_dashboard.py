@@ -20,6 +20,7 @@ Artifact using the SAME artifact URL each time (see README) so the
 dashboard's public link never changes.
 """
 import json
+import re
 
 STATUS_COLOR_VARS = {
     "failed": "var(--status-failed)",
@@ -82,31 +83,50 @@ def section_html(status_key, data):
   </div>'''
 
 
+def candidate_id(it):
+    """Stable id for a candidate: the explicit `id` field if present, else a
+    slug of the name (lowercase, non-alphanumerics -> underscore).
+    This id is the document id in the artifact database collection
+    `candidate_decisions`, so it must not change once a card is published."""
+    if it.get("id"):
+        return it["id"]
+    return re.sub(r"[^a-z0-9]+", "_", it["name"].lower()).strip("_")
+
+
 def new_candidates_html(data):
     items = data.get("new_candidates", [])
     if not items:
         return ""
     rows = "\n".join(
-        f'''<div class="card" style="--stripe:var(--accent);">
+        f"""<div class="card cand" data-cid="{candidate_id(it)}" data-decision="{it.get('decision','') or ''}" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>{it["name"]}</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">{it.get("asset","—")}</span>{it.get("note","")}</div>
-      <div class="card-foot"><span class="event-date">{it.get("found_date","")}</span></div>
-    </div>''' for it in items
+      <div class="asset-row"><span class="asset-code">{it.get("asset","—")}</span></div>
+      <div class="finding">{it.get("note","")}</div>
+      <div class="card-foot"><span class="event-date">Found {it.get("found_date","")}</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
+    </div>""" for it in items
     )
-    return f'''<div class="section">
+    return f"""<div class="section" id="review">
     <div class="section-head">
       <div class="section-stripe" style="background:var(--accent);"></div>
-      <h2>New Candidates — Not Yet Tracked</h2>
-      <span class="count">{len(items)} found</span>
+      <h2>New Candidates — Your Review</h2>
+      <span class="count">{len(items)} awaiting a decision</span>
     </div>
-    <p class="subtext">Surfaced by the weekly ClinicalTrials.gov pull but not yet added to the tracked shortlist above. Review and promote manually — new entries are never auto-added.</p>
+    <p class="subtext">Programs surfaced by the weekly sweep that aren't on the tracked board yet. Nothing is added automatically — pick a decision on each card. <b>Add to tracker</b> gives it a profile and a card above; <b>Dismiss</b> removes it and stops it resurfacing; <b>Leave in limbo</b> keeps it here without nagging. Decisions are saved instantly and carried out by the next weekly run.</p>
+    <p class="review-note" id="review-note"></p>
     <div class="grid">
       {rows}
     </div>
-  </div>'''
+  </div>"""
 
 
 def main():

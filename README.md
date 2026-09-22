@@ -142,7 +142,7 @@ possible to update automatically:
 
 | File | Role |
 |---|---|
-| `data/dashboard_status.json` | The only file that should change week to week — per-company status, asset, finding text, key date, and a `new_candidates` list for unreviewed new assets |
+| `data/dashboard_status.json` | The only file that should change week to week — per-company status, asset, finding text, key date, a `new_candidates` list for unreviewed new assets (each with a stable `id`), and a `dismissed_candidates` list of ones you've said no to |
 | `scripts/dashboard_template.html` | Page shell/design (masthead, CSS, layout) — shouldn't need to change often |
 | `scripts/fonts_inline.css` | Embedded fonts (Source Serif 4 / Public Sans / IBM Plex Mono), generated once |
 | `scripts/build_dashboard.py` | Reads the JSON + template + fonts, writes `dashboard/oa_dashboard.html` |
@@ -171,13 +171,33 @@ works entirely from `WebSearch` instead:
 2. **Light run:** one web search per company, but only the 20 `tier: "core"` companies — a quick pulse-check. The 49 `tier: "extended"` companies are left alone.
 3. **Full sweep:** covers all 69 companies, since this is the run responsible for catching anything the weekly light checks would miss. Core tier gets a thorough 2-3-query pass (including a check against any expected event date noted in that company's "Discrepancies / Watch Items"); extended tier gets one search each — these otherwise get zero ongoing monitoring, so this monthly pass is their only check. Also runs several varied searches ("new osteoarthritis gene therapy trial 2026," "…stem cell trial 2026," "…GLP-1 trial 2026," etc.) specifically to catch brand-new programs not yet tracked at all.
 4. If something material turns up, it's appended (not rewritten) to `companies/<name>/oa_profile.md` and `data/dashboard_status.json` is updated
-5. New companies/assets not yet tracked go into `new_candidates` (never auto-added to the main board — promoting one is a judgment call left for review)
+5. New companies/assets not yet tracked go into `new_candidates` (never auto-added to the main board — promoting one is your call, made with the dashboard buttons described below)
 6. Rebuilds and republishes the dashboard to the same URL
 7. Commits and pushes everything to GitHub
-8. Emails a plain-language summary to wkalmans@lontraventures.com of what changed (or says plainly if nothing did)
+8. Emails an HTML summary to wkalmans@lontraventures.com of what changed (or says plainly if nothing did). The email leads with 3–5 top takeaways, then groups changes by dashboard status; **within each group, items are ordered by importance to a team commercializing a new disease-modifying OA agent** (regulatory/Phase 3 events on DMOAD candidates first, then late-stage symptomatic programs, big-pharma entries/exits, Phase 2 data, early-stage starts, and minor items last).
 
-New candidates surface in their own "New Candidates" section at the bottom
-of the dashboard until promoted into the tracked list by hand.
+**Reviewing new candidates (added 2026-09-22).** The dashboard's "New
+Candidates — Your Review" section has three buttons on every card:
+**Add to tracker**, **Leave in limbo**, **Dismiss**. Clicking one saves
+the decision instantly in the dashboard artifact's built-in database
+(collection `candidate_decisions`, one document per candidate keyed by
+the candidate's `id`). The weekly routine reads those decisions at the
+start of every run (its "Phase A0") and carries them out:
+
+| Decision | What the routine does |
+|---|---|
+| Add to tracker | Runs a short research pass, writes `companies/<id>/oa_profile.md`, adds the company to `companies[]` as an extended-tier entry, removes it from `new_candidates[]` |
+| Dismiss | Removes it from `new_candidates[]` and records it in `dismissed_candidates[]` so it is never re-surfaced |
+| Leave in limbo | Keeps it on the dashboard, tagged `"decision": "limbo"`, without re-flagging it in the email |
+
+After acting, the routine marks the decision document `applied: true`, and
+the card on the dashboard says so. To process decisions without waiting
+for Sunday, ask Claude Code to "apply the OA candidate decisions" — it can
+read the same database with the `ArtifactData` tool.
+
+Because the page now declares a database capability, the artifact is
+organization-internal: it can be shared with people in the Lontra
+Ventures claude.ai organization but not by public link.
 
 **Note:** the `OA` GitHub repo had to be made public to let the routine's
 GitHub App access it — Claude's GitHub App installation on a specific

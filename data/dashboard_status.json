@@ -922,49 +922,58 @@
       "name": "Organogenesis Holdings",
       "asset": "ReNu (cryopreserved amniotic suspension allograft)",
       "note": "FDA accepted the BLA for ReNu for symptomatic knee OA pain in July 2026, with a PDUFA date of April 24, 2027 — an allograft biologic nearing a real regulatory decision, not just an early-stage program.",
-      "found_date": "2026-09-07"
+      "found_date": "2026-09-07",
+      "id": "organogenesis_holdings"
     },
     {
       "name": "Sanofi",
       "asset": "SAR446959",
       "note": "A first-in-human Phase 1 intra-articular knee OA trial (NCT06704932) completed December 2025; a major pharma OA entrant not currently on this board at all.",
-      "found_date": "2026-09-07"
+      "found_date": "2026-09-07",
+      "id": "sanofi"
     },
     {
       "name": "Synartro",
       "asset": "SYN321 (diclofenac-hyaluronan conjugate)",
       "note": "Swedish biotech reported positive Phase I/IIa data for its slow-release intra-articular diclofenac candidate in knee OA (May 2026) — borderline scope call since it pairs a drug (diclofenac) with a hyaluronan carrier rather than being a pure viscosupplement device.",
-      "found_date": "2026-09-07"
+      "found_date": "2026-09-07",
+      "id": "synartro"
     },
     {
       "name": "OliPass Corporation",
       "asset": "OLP-1002 (Nav1.7-selective PNA antisense inhibitor)",
       "note": "Phase 2a trial in moderate-to-severe OA pain (Australia) reported dosing complete with striking early efficacy — up to 50-70% WOMAC pain reduction and 60-80% VAS reduction at low dose over 4 weeks from a single subcutaneous injection.",
-      "found_date": "2026-09-21"
+      "found_date": "2026-09-21",
+      "id": "olipass_corporation"
     },
     {
       "name": "Kangstem Biotech",
       "asset": "OSCA (osiramestrocel + cartilage acellular matrix)",
       "note": "First-in-human Phase I trial of an intra-articular co-formulation of allogeneic umbilical-cord-blood MSCs and cartilage acellular matrix in knee OA, published 2026, showed no dose-limiting toxicities and MRI signs of possible cartilage repair.",
-      "found_date": "2026-09-21"
+      "found_date": "2026-09-21",
+      "id": "kangstem_biotech"
     },
     {
       "name": "Applied Biologics",
       "asset": "Disease-Modifying Osteoarthritis (DMOAD) gene therapy program (unnamed vector)",
       "note": "Launched a new preclinical DMOAD gene therapy program in June 2026 (expanding beyond its chronic-wound business) and announced successful vector delivery/expression in chondrocytes as a key preclinical milestone in Sept 2026.",
-      "found_date": "2026-09-21"
+      "found_date": "2026-09-21",
+      "id": "applied_biologics"
     },
     {
       "name": "Renovare Therapeutics, Inc.",
       "asset": "Regenerative injection platform / biomaterial cartilage repair kit",
       "note": "New biotech launched from stealth in April 2026 (CU Boulder/CU Anschutz/Colorado State spinout), backed by up to $33.5M in ARPA-H NITRO funding; animal data show joint self-repair within weeks, with human trials targeted by 2028.",
-      "found_date": "2026-09-21"
+      "found_date": "2026-09-21",
+      "id": "renovare_therapeutics_inc"
     },
     {
       "name": "BioTissue, Inc.",
       "asset": "BioDRestore (amniotic membrane / umbilical cord particulate allograft)",
       "note": "Completed an 84-subject randomized trial vs. steroid injection for knee OA showing sustained improvement (Lysholm, KOOS, SANE) out to 12 months; consistently listed as an active OA-pipeline player in 2024-2026 competitive-landscape reports but not yet tracked here.",
-      "found_date": "2026-09-21"
+      "found_date": "2026-09-21",
+      "id": "biotissue_inc"
     }
-  ]
+  ],
+  "dismissed_candidates": []
 }

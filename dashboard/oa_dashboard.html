@@ -313,6 +313,31 @@ h1{
   padding:0.1rem 0.35rem;
 }
 
+
+/* ---------- Candidate review (decisions saved to the artifact database) ---------- */
+.review-bar{
+  display:flex; flex-wrap:wrap; align-items:center; gap:0.4rem;
+  padding-top:0.15rem;
+}
+.review-bar .lbl{
+  font-family:'IBM Plex Mono', monospace; font-size:0.66rem; letter-spacing:0.06em;
+  text-transform:uppercase; color:var(--ink-faint); margin-right:0.15rem;
+}
+.rbtn{
+  font-family:'Public Sans', sans-serif; font-size:0.78rem; font-weight:600;
+  padding:0.32rem 0.7rem; border:1px solid var(--border-strong); border-radius:2px;
+  background:var(--surface-2); color:var(--ink); cursor:pointer; line-height:1.2;
+}
+.rbtn:hover{ border-color:var(--ink-muted); }
+.rbtn[disabled]{ opacity:0.45; cursor:default; }
+.rbtn.is-on[data-d="add"]{ background:var(--status-momentum-bg); color:var(--status-momentum); border-color:var(--status-momentum); }
+.rbtn.is-on[data-d="dismiss"]{ background:var(--status-failed-bg); color:var(--status-failed); border-color:var(--status-failed); }
+.rbtn.is-on[data-d="limbo"]{ background:var(--status-none-bg); color:var(--status-none); border-color:var(--status-none); }
+.review-state{ flex-basis:100%; font-size:0.74rem; color:var(--ink-muted); }
+.review-state.applied{ color:var(--status-momentum); }
+.review-note{ font-size:0.8rem; color:var(--accent-ink); margin:-0.5rem 0 1rem; max-width:70ch; }
+.review-note:empty{ display:none; }
+
 /* ---------- Footer ---------- */
 footer{
   margin-top:3rem;
@@ -1509,77 +1534,142 @@ footer strong{ color:var(--ink-muted); }
     </div>
   </div>
 
-  <div class="section">
+  <div class="section" id="review">
     <div class="section-head">
       <div class="section-stripe" style="background:var(--accent);"></div>
-      <h2>New Candidates — Not Yet Tracked</h2>
-      <span class="count">8 found</span>
+      <h2>New Candidates — Your Review</h2>
+      <span class="count">8 awaiting a decision</span>
     </div>
-    <p class="subtext">Surfaced by the weekly ClinicalTrials.gov pull but not yet added to the tracked shortlist above. Review and promote manually — new entries are never auto-added.</p>
+    <p class="subtext">Programs surfaced by the weekly sweep that aren't on the tracked board yet. Nothing is added automatically — pick a decision on each card. <b>Add to tracker</b> gives it a profile and a card above; <b>Dismiss</b> removes it and stops it resurfacing; <b>Leave in limbo</b> keeps it here without nagging. Decisions are saved instantly and carried out by the next weekly run.</p>
+    <p class="review-note" id="review-note"></p>
     <div class="grid">
-      <div class="card" style="--stripe:var(--accent);">
+      <div class="card cand" data-cid="organogenesis_holdings" data-decision="" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>Organogenesis Holdings</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">ReNu (cryopreserved amniotic suspension allograft)</span>FDA accepted the BLA for ReNu for symptomatic knee OA pain in July 2026, with a PDUFA date of April 24, 2027 — an allograft biologic nearing a real regulatory decision, not just an early-stage program.</div>
-      <div class="card-foot"><span class="event-date">2026-09-07</span></div>
+      <div class="asset-row"><span class="asset-code">ReNu (cryopreserved amniotic suspension allograft)</span></div>
+      <div class="finding">FDA accepted the BLA for ReNu for symptomatic knee OA pain in July 2026, with a PDUFA date of April 24, 2027 — an allograft biologic nearing a real regulatory decision, not just an early-stage program.</div>
+      <div class="card-foot"><span class="event-date">Found 2026-09-07</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
     </div>
-<div class="card" style="--stripe:var(--accent);">
+<div class="card cand" data-cid="sanofi" data-decision="" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>Sanofi</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">SAR446959</span>A first-in-human Phase 1 intra-articular knee OA trial (NCT06704932) completed December 2025; a major pharma OA entrant not currently on this board at all.</div>
-      <div class="card-foot"><span class="event-date">2026-09-07</span></div>
+      <div class="asset-row"><span class="asset-code">SAR446959</span></div>
+      <div class="finding">A first-in-human Phase 1 intra-articular knee OA trial (NCT06704932) completed December 2025; a major pharma OA entrant not currently on this board at all.</div>
+      <div class="card-foot"><span class="event-date">Found 2026-09-07</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
     </div>
-<div class="card" style="--stripe:var(--accent);">
+<div class="card cand" data-cid="synartro" data-decision="" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>Synartro</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">SYN321 (diclofenac-hyaluronan conjugate)</span>Swedish biotech reported positive Phase I/IIa data for its slow-release intra-articular diclofenac candidate in knee OA (May 2026) — borderline scope call since it pairs a drug (diclofenac) with a hyaluronan carrier rather than being a pure viscosupplement device.</div>
-      <div class="card-foot"><span class="event-date">2026-09-07</span></div>
+      <div class="asset-row"><span class="asset-code">SYN321 (diclofenac-hyaluronan conjugate)</span></div>
+      <div class="finding">Swedish biotech reported positive Phase I/IIa data for its slow-release intra-articular diclofenac candidate in knee OA (May 2026) — borderline scope call since it pairs a drug (diclofenac) with a hyaluronan carrier rather than being a pure viscosupplement device.</div>
+      <div class="card-foot"><span class="event-date">Found 2026-09-07</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
     </div>
-<div class="card" style="--stripe:var(--accent);">
+<div class="card cand" data-cid="olipass_corporation" data-decision="" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>OliPass Corporation</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">OLP-1002 (Nav1.7-selective PNA antisense inhibitor)</span>Phase 2a trial in moderate-to-severe OA pain (Australia) reported dosing complete with striking early efficacy — up to 50-70% WOMAC pain reduction and 60-80% VAS reduction at low dose over 4 weeks from a single subcutaneous injection.</div>
-      <div class="card-foot"><span class="event-date">2026-09-21</span></div>
+      <div class="asset-row"><span class="asset-code">OLP-1002 (Nav1.7-selective PNA antisense inhibitor)</span></div>
+      <div class="finding">Phase 2a trial in moderate-to-severe OA pain (Australia) reported dosing complete with striking early efficacy — up to 50-70% WOMAC pain reduction and 60-80% VAS reduction at low dose over 4 weeks from a single subcutaneous injection.</div>
+      <div class="card-foot"><span class="event-date">Found 2026-09-21</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
     </div>
-<div class="card" style="--stripe:var(--accent);">
+<div class="card cand" data-cid="kangstem_biotech" data-decision="" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>Kangstem Biotech</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">OSCA (osiramestrocel + cartilage acellular matrix)</span>First-in-human Phase I trial of an intra-articular co-formulation of allogeneic umbilical-cord-blood MSCs and cartilage acellular matrix in knee OA, published 2026, showed no dose-limiting toxicities and MRI signs of possible cartilage repair.</div>
-      <div class="card-foot"><span class="event-date">2026-09-21</span></div>
+      <div class="asset-row"><span class="asset-code">OSCA (osiramestrocel + cartilage acellular matrix)</span></div>
+      <div class="finding">First-in-human Phase I trial of an intra-articular co-formulation of allogeneic umbilical-cord-blood MSCs and cartilage acellular matrix in knee OA, published 2026, showed no dose-limiting toxicities and MRI signs of possible cartilage repair.</div>
+      <div class="card-foot"><span class="event-date">Found 2026-09-21</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
     </div>
-<div class="card" style="--stripe:var(--accent);">
+<div class="card cand" data-cid="applied_biologics" data-decision="" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>Applied Biologics</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">Disease-Modifying Osteoarthritis (DMOAD) gene therapy program (unnamed vector)</span>Launched a new preclinical DMOAD gene therapy program in June 2026 (expanding beyond its chronic-wound business) and announced successful vector delivery/expression in chondrocytes as a key preclinical milestone in Sept 2026.</div>
-      <div class="card-foot"><span class="event-date">2026-09-21</span></div>
+      <div class="asset-row"><span class="asset-code">Disease-Modifying Osteoarthritis (DMOAD) gene therapy program (unnamed vector)</span></div>
+      <div class="finding">Launched a new preclinical DMOAD gene therapy program in June 2026 (expanding beyond its chronic-wound business) and announced successful vector delivery/expression in chondrocytes as a key preclinical milestone in Sept 2026.</div>
+      <div class="card-foot"><span class="event-date">Found 2026-09-21</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
     </div>
-<div class="card" style="--stripe:var(--accent);">
+<div class="card cand" data-cid="renovare_therapeutics_inc" data-decision="" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>Renovare Therapeutics, Inc.</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">Regenerative injection platform / biomaterial cartilage repair kit</span>New biotech launched from stealth in April 2026 (CU Boulder/CU Anschutz/Colorado State spinout), backed by up to $33.5M in ARPA-H NITRO funding; animal data show joint self-repair within weeks, with human trials targeted by 2028.</div>
-      <div class="card-foot"><span class="event-date">2026-09-21</span></div>
+      <div class="asset-row"><span class="asset-code">Regenerative injection platform / biomaterial cartilage repair kit</span></div>
+      <div class="finding">New biotech launched from stealth in April 2026 (CU Boulder/CU Anschutz/Colorado State spinout), backed by up to $33.5M in ARPA-H NITRO funding; animal data show joint self-repair within weeks, with human trials targeted by 2028.</div>
+      <div class="card-foot"><span class="event-date">Found 2026-09-21</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
     </div>
-<div class="card" style="--stripe:var(--accent);">
+<div class="card cand" data-cid="biotissue_inc" data-decision="" style="--stripe:var(--accent);">
       <div class="card-top">
         <h3>BioTissue, Inc.</h3>
         <span class="new-badge">New — not yet tracked</span>
       </div>
-      <div class="asset-row"><span class="asset-code">BioDRestore (amniotic membrane / umbilical cord particulate allograft)</span>Completed an 84-subject randomized trial vs. steroid injection for knee OA showing sustained improvement (Lysholm, KOOS, SANE) out to 12 months; consistently listed as an active OA-pipeline player in 2024-2026 competitive-landscape reports but not yet tracked here.</div>
-      <div class="card-foot"><span class="event-date">2026-09-21</span></div>
+      <div class="asset-row"><span class="asset-code">BioDRestore (amniotic membrane / umbilical cord particulate allograft)</span></div>
+      <div class="finding">Completed an 84-subject randomized trial vs. steroid injection for knee OA showing sustained improvement (Lysholm, KOOS, SANE) out to 12 months; consistently listed as an active OA-pipeline player in 2024-2026 competitive-landscape reports but not yet tracked here.</div>
+      <div class="card-foot"><span class="event-date">Found 2026-09-21</span></div>
+      <div class="review-bar">
+        <span class="lbl">Decision</span>
+        <button type="button" class="rbtn" data-d="add">Add to tracker</button>
+        <button type="button" class="rbtn" data-d="limbo">Leave in limbo</button>
+        <button type="button" class="rbtn" data-d="dismiss">Dismiss</button>
+        <span class="review-state">No decision yet.</span>
+      </div>
     </div>
     </div>
   </div>
@@ -1589,3 +1679,64 @@ footer strong{ color:var(--ink-muted); }
   </footer>
 
 </div>
+
+<script>
+(function(){
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card.cand'));
+  if(!cards.length) return;
+  var note = document.getElementById('review-note');
+  var LABEL = {add:'Add to tracker', limbo:'Leave in limbo', dismiss:'Dismiss'};
+  var current = {};
+  function setNote(t){ if(note) note.textContent = t || ''; }
+  function disableAll(){ cards.forEach(function(c){ c.querySelectorAll('.rbtn').forEach(function(b){ b.disabled = true; }); }); }
+  function paint(card, dec, meta){
+    card.querySelectorAll('.rbtn').forEach(function(b){ b.classList.toggle('is-on', b.dataset.d === dec); });
+    var st = card.querySelector('.review-state');
+    st.classList.remove('applied');
+    if(!dec){ st.textContent = 'No decision yet.'; return; }
+    var when = (meta && meta.decided_at) ? ' on ' + String(meta.decided_at).slice(0,10) : '';
+    if(meta && meta.applied){ st.textContent = LABEL[dec] + when + ' — applied by the weekly run.'; st.classList.add('applied'); }
+    else if(meta){ st.textContent = LABEL[dec] + when + ' — will be applied on the next weekly run (Sunday night).'; }
+    else { st.textContent = LABEL[dec] + ' (recorded in the tracker).'; }
+  }
+  cards.forEach(function(card){ paint(card, card.dataset.decision || null, null); });
+  if(!window.claude || typeof window.claude.use !== 'function'){
+    setNote('Open this page on claude.ai to record decisions.'); disableAll(); return;
+  }
+  window.claude.use('db').then(function(db){
+    if(!db){ setNote('Decisions can’t be saved from this view. Open the page on claude.ai, signed in as the owner.'); disableAll(); return; }
+    var col = db.collection('candidate_decisions');
+    col.onSnapshot(function(snap){
+      var byId = {};
+      snap.docs.forEach(function(d){ if(d.exists) byId[d.id] = d.data(); });
+      cards.forEach(function(card){
+        var m = byId[card.dataset.cid] || null;
+        current[card.dataset.cid] = m ? m.decision : null;
+        paint(card, m ? m.decision : (card.dataset.decision || null), m);
+      });
+    }, function(e){ setNote('Could not load saved decisions (' + (e && e.code) + ').'); });
+    var busy = {};
+    cards.forEach(function(card){
+      card.querySelectorAll('.rbtn').forEach(function(btn){
+        btn.addEventListener('click', function(){
+          var id = card.dataset.cid, dec = btn.dataset.d;
+          if(busy[id]) return;
+          busy[id] = true; setNote('');
+          col.doc(id).set({
+            name: card.querySelector('h3').textContent,
+            asset: card.querySelector('.asset-code').textContent,
+            decision: dec,
+            decided_at: new Date().toISOString(),
+            applied: false
+          }).then(function(){ busy[id] = false; }, function(e){
+            busy[id] = false;
+            setNote((e && e.code === 'invalid_argument')
+              ? 'You don’t have permission to record decisions on this page.'
+              : 'Could not save that decision (' + (e && e.code) + '). Try again in a moment.');
+          });
+        });
+      });
+    });
+  });
+})();
+</script>

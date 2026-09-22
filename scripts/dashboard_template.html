@@ -304,6 +304,31 @@ h1{
   padding:0.1rem 0.35rem;
 }
 
+
+/* ---------- Candidate review (decisions saved to the artifact database) ---------- */
+.review-bar{
+  display:flex; flex-wrap:wrap; align-items:center; gap:0.4rem;
+  padding-top:0.15rem;
+}
+.review-bar .lbl{
+  font-family:'IBM Plex Mono', monospace; font-size:0.66rem; letter-spacing:0.06em;
+  text-transform:uppercase; color:var(--ink-faint); margin-right:0.15rem;
+}
+.rbtn{
+  font-family:'Public Sans', sans-serif; font-size:0.78rem; font-weight:600;
+  padding:0.32rem 0.7rem; border:1px solid var(--border-strong); border-radius:2px;
+  background:var(--surface-2); color:var(--ink); cursor:pointer; line-height:1.2;
+}
+.rbtn:hover{ border-color:var(--ink-muted); }
+.rbtn[disabled]{ opacity:0.45; cursor:default; }
+.rbtn.is-on[data-d="add"]{ background:var(--status-momentum-bg); color:var(--status-momentum); border-color:var(--status-momentum); }
+.rbtn.is-on[data-d="dismiss"]{ background:var(--status-failed-bg); color:var(--status-failed); border-color:var(--status-failed); }
+.rbtn.is-on[data-d="limbo"]{ background:var(--status-none-bg); color:var(--status-none); border-color:var(--status-none); }
+.review-state{ flex-basis:100%; font-size:0.74rem; color:var(--ink-muted); }
+.review-state.applied{ color:var(--status-momentum); }
+.review-note{ font-size:0.8rem; color:var(--accent-ink); margin:-0.5rem 0 1rem; max-width:70ch; }
+.review-note:empty{ display:none; }
+
 /* ---------- Footer ---------- */
 footer{
   margin-top:3rem;
@@ -355,3 +380,64 @@ footer strong{ color:var(--ink-muted); }
   </footer>
 
 </div>
+
+<script>
+(function(){
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card.cand'));
+  if(!cards.length) return;
+  var note = document.getElementById('review-note');
+  var LABEL = {add:'Add to tracker', limbo:'Leave in limbo', dismiss:'Dismiss'};
+  var current = {};
+  function setNote(t){ if(note) note.textContent = t || ''; }
+  function disableAll(){ cards.forEach(function(c){ c.querySelectorAll('.rbtn').forEach(function(b){ b.disabled = true; }); }); }
+  function paint(card, dec, meta){
+    card.querySelectorAll('.rbtn').forEach(function(b){ b.classList.toggle('is-on', b.dataset.d === dec); });
+    var st = card.querySelector('.review-state');
+    st.classList.remove('applied');
+    if(!dec){ st.textContent = 'No decision yet.'; return; }
+    var when = (meta && meta.decided_at) ? ' on ' + String(meta.decided_at).slice(0,10) : '';
+    if(meta && meta.applied){ st.textContent = LABEL[dec] + when + ' — applied by the weekly run.'; st.classList.add('applied'); }
+    else if(meta){ st.textContent = LABEL[dec] + when + ' — will be applied on the next weekly run (Sunday night).'; }
+    else { st.textContent = LABEL[dec] + ' (recorded in the tracker).'; }
+  }
+  cards.forEach(function(card){ paint(card, card.dataset.decision || null, null); });
+  if(!window.claude || typeof window.claude.use !== 'function'){
+    setNote('Open this page on claude.ai to record decisions.'); disableAll(); return;
+  }
+  window.claude.use('db').then(function(db){
+    if(!db){ setNote('Decisions can’t be saved from this view. Open the page on claude.ai, signed in as the owner.'); disableAll(); return; }
+    var col = db.collection('candidate_decisions');
+    col.onSnapshot(function(snap){
+      var byId = {};
+      snap.docs.forEach(function(d){ if(d.exists) byId[d.id] = d.data(); });
+      cards.forEach(function(card){
+        var m = byId[card.dataset.cid] || null;
+        current[card.dataset.cid] = m ? m.decision : null;
+        paint(card, m ? m.decision : (card.dataset.decision || null), m);
+      });
+    }, function(e){ setNote('Could not load saved decisions (' + (e && e.code) + ').'); });
+    var busy = {};
+    cards.forEach(function(card){
+      card.querySelectorAll('.rbtn').forEach(function(btn){
+        btn.addEventListener('click', function(){
+          var id = card.dataset.cid, dec = btn.dataset.d;
+          if(busy[id]) return;
+          busy[id] = true; setNote('');
+          col.doc(id).set({
+            name: card.querySelector('h3').textContent,
+            asset: card.querySelector('.asset-code').textContent,
+            decision: dec,
+            decided_at: new Date().toISOString(),
+            applied: false
+          }).then(function(){ busy[id] = false; }, function(e){
+            busy[id] = false;
+            setNote((e && e.code === 'invalid_argument')
+              ? 'You don’t have permission to record decisions on this page.'
+              : 'Could not save that decision (' + (e && e.code) + '). Try again in a moment.');
+          });
+        });
+      });
+    });
+  });
+})();
+</script>

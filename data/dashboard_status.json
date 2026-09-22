@@ -1,5 +1,5 @@
 {
-  "last_refreshed": "2026-09-21",
+  "last_refreshed": "2026-09-22",
   "status_labels": {
     "failed": "Discontinued / Failed",
     "pending": "Active — Data Pending",
@@ -68,7 +68,7 @@
       "date_label": "Phase 3 miss confirmed by company lay summary (2025)",
       "deep_dive": false,
       "also_note": "Also markets: Tapentadol (originator)",
-      "new": true,
+      "new": false,
       "tier": "core"
     },
     {
@@ -81,7 +81,7 @@
       "date_label": "Terminated, late 2024 (new OA discovery deal w/ Relation Tx, expanded Jul 2026)",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "core"
     },
     {
@@ -146,7 +146,7 @@
       "date_label": "Berobenatide Phase 2b positive, Jun 2026",
       "deep_dive": true,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "core"
     },
     {
@@ -185,7 +185,7 @@
       "date_label": "NDA filed (US); UK MHRA accepted app, Sep 2026",
       "deep_dive": true,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "core"
     },
     {
@@ -328,7 +328,7 @@
       "date_label": "Phase 2b, IND cleared & first patient dosed 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -380,7 +380,7 @@
       "date_label": "New pipeline trial (Conjuran®) surfaced 2026, no data yet",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -445,7 +445,7 @@
       "date_label": "Phase 1/2, started August 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -458,7 +458,7 @@
       "date_label": "Phase 3, NCT07709910 registered, est. start July 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -484,7 +484,7 @@
       "date_label": "Phase 3, delayed to later 2026 (not yet started)",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -536,7 +536,7 @@
       "date_label": "Phase 3, enrollment complete Nov 2025; readout pending",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -562,7 +562,7 @@
       "date_label": "Phase 1, dosing underway (started Jan 2026)",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -601,7 +601,7 @@
       "date_label": "Phase 1/2 primary completion done; Phase 2 efficacy trial registered",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -718,7 +718,7 @@
       "date_label": "Phase 3, recruiting (KOA)",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -757,7 +757,7 @@
       "date_label": "Phase 3, enrollment complete, interim Sept 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -770,7 +770,7 @@
       "date_label": "Phase 3, started Nov 2025, enrolling",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -835,7 +835,7 @@
       "date_label": "Licensed to Japan (A&I Corp), trial not yet recruiting",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -874,7 +874,7 @@
       "date_label": "FDA Breakthrough Therapy Designation; accelerated-approval meeting May 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -887,7 +887,7 @@
       "date_label": "Phase 1 published; Phase 2 (204 pts, 7 EU countries) planned 2026",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {
@@ -900,7 +900,7 @@
       "date_label": "Phase 1b, recruiting; first patients dosed Dec 2025",
       "deep_dive": false,
       "also_note": null,
-      "new": true,
+      "new": false,
       "tier": "extended"
     },
     {

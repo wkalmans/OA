@@ -56,9 +56,19 @@ COMPANIES = [
 ]
 
 
+TICKER_URL = "https://www.sec.gov/files/company_tickers.json"
+
+
 def load_ticker_file():
-    with open("/tmp/company_tickers.json") as f:
-        return list(json.load(f).values())
+    """Download SEC's ticker->CIK lookup table fresh each run.
+
+    Earlier versions expected a copy at /tmp/company_tickers.json, but macOS
+    clears /tmp on reboot, which crashed the unattended monthly refresh.
+    """
+    print(f"Downloading SEC ticker table from {TICKER_URL} ...")
+    req = urllib.request.Request(TICKER_URL, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return list(json.loads(resp.read().decode()).values())
 
 
 def resolve_cik(search_str, ticker_entries):

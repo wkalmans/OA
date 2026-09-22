@@ -122,5 +122,3 @@ form,filing_date,report_date,items,accession_number,primary_doc_url,filing_index
 10-Q,2017-08-03,2017-06-30,,0001532176-17-000027,https://www.sec.gov/Archives/edgar/data/872589/000153217617000027/regn-063017x10q.htm,https://www.sec.gov/Archives/edgar/data/872589/000153217617000027/
 8-K,2017-08-03,2017-08-03,"2.02,9.01",0001532176-17-000025,https://www.sec.gov/Archives/edgar/data/872589/000153217617000025/form8-kq22017.htm,https://www.sec.gov/Archives/edgar/data/872589/000153217617000025/
 8-K,2017-06-14,2017-06-09,"5.02,5.07",0001104659-17-039157,https://www.sec.gov/Archives/edgar/data/872589/000110465917039157/a17-15192_18k.htm,https://www.sec.gov/Archives/edgar/data/872589/000110465917039157/
-10-Q,2017-05-04,2017-03-31,,0001532176-17-000017,https://www.sec.gov/Archives/edgar/data/872589/000153217617000017/regn-033117x10q.htm,https://www.sec.gov/Archives/edgar/data/872589/000153217617000017/
-8-K,2017-05-04,2017-05-04,"2.02,9.01",0001532176-17-000015,https://www.sec.gov/Archives/edgar/data/872589/000153217617000015/form8-kq12017.htm,https://www.sec.gov/Archives/edgar/data/872589/000153217617000015/
